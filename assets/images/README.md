@@ -6,6 +6,7 @@ Basta colocar aqui os ficheiros com **exatamente estes nomes** para as fotos rea
 
 | Ficheiro | Onde aparece | Sugestão |
 |---|---|---|
+| `logo-tabua-daco.png` | **Header** (logótipo) | O **logo do restaurante**. Exportar em **PNG com fundo transparente** (ou SVG). Altura útil ~48px, mas envia em alta resolução. Sem ele, aparece o wordmark "tábua.d'aço" em texto. |
 | `hero-tabuaco.jpg` | **Header / hero** (fundo grande) | A **vista aérea da vila de Tabuaço** no Douro (a 2ª imagem que enviaste). Ideal ≥ 2000px de largura, horizontal. |
 | `porta-tabuaco.jpg` | Secção "O Restaurante" | Fachada / porta tradicional ou o espaço do restaurante (formato vertical 4:5). |
 | `galeria-1.jpg` · `galeria-2.jpg` · `galeria-3.jpg` | Faixa de 3 fotos | Pratos / momentos à mesa. A do meio é quadrada. |
