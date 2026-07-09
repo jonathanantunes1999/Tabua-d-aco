@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ementa — Tábua d'Aço · Tabuaço, Douro</title>
+<meta name="description" content="A ementa do Restaurante Tábua d'Aço: pratos típicos da região do Douro e sabores da Áustria, Itália, Espanha e Ásia, com vinhos da região demarcada.">
+<meta property="og:title" content="Ementa — Tábua d'Aço · Tabuaço, Douro">
+<meta property="og:description" content="A ementa do Restaurante Tábua d'Aço: pratos típicos da região do Douro e sabores da Áustria, Itália, Espanha e Ásia, com vinhos da região demarcada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Figtree:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23211C17'/%3E%3Ccircle cx='16' cy='15' r='8' fill='none' stroke='%23E7A81E' stroke-width='2.4'/%3E%3Ccircle cx='16' cy='15' r='3' fill='none' stroke='%23A7B834' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<div class="header">
+  <div class="header__top">
+    <div class="header__icons">
+      <a href="sobre.html" aria-label="Sobre a casa" title="A casa">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V8l6-4 6 4v13"/><path d="M15 21V11h6v10"/><path d="M6.5 11h2M6.5 15h2M18 15h1"/><path d="M2 21h20"/></svg>
+      </a>
+      <a href="ementa.html" aria-label="Ver a ementa" title="Ementa">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3v8a2 2 0 002 2v8"/><path d="M6 3v6M9.5 3v6"/><path d="M16 3c-1.5 2-2 4-2 6s.7 3 2 3v9"/></svg>
+      </a>
+      <a href="contactos.html" aria-label="Reservar mesa" title="Reservas">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v3M16 3v3"/><rect x="3" y="6" width="18" height="15" rx="2"/><path d="M3 11h18"/><circle cx="12" cy="16" r="1.4" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+
+    <a href="index.html" class="header__logo" aria-label="Tábua d'Aço — início">
+      <img src="assets/logo-tabua-daco.png" alt="Tábua d'Aço" width="320" height="203">
+    </a>
+
+    <div class="header__right">
+      <div class="lang" id="lang">
+        <button class="lang__btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+          <span class="lang__flag">
+            <svg viewBox="0 0 30 20" width="24" height="17"><rect width="12" height="20" fill="#046A38"/><rect x="12" width="18" height="20" fill="#DA291C"/><circle cx="12" cy="10" r="5" fill="#FFE900" stroke="#fff" stroke-width=".7"/><circle cx="12" cy="10" r="3" fill="#DA291C"/></svg>
+          </span>
+          <span id="langLabel">Pt</span>
+          <svg width="24" height="24" class="lang__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang__menu" role="menu">
+          <button role="menuitem" aria-current="true" data-lang="Pt">
+            <svg viewBox="0 0 30 20" width="22" height="15"><rect width="12" height="20" fill="#046A38"/><rect x="12" width="18" height="20" fill="#DA291C"/><circle cx="12" cy="10" r="5" fill="#FFE900" stroke="#fff" stroke-width=".7"/><circle cx="12" cy="10" r="3" fill="#DA291C"/></svg>
+            Português
+          </button>
+          <button role="menuitem" aria-current="false" data-lang="En">
+            <svg viewBox="0 0 30 20" width="22" height="15"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3.5"/></svg>
+            English
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="header__nav" id="nav" aria-label="Navegação principal">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="ementa.html" class="active">Ementa</a>
+    <a href="contactos.html">Contactos</a>
+  </nav>
+</div>
+
+<main id="topo">
+<section class="pagehero pagehero--ementa">
+  <div class="pagehero__bg"></div>
+  <div class="pagehero__scrim"></div>
+  <div class="pagehero__inner">
+    <span class="pagehero__k">Ementa</span>
+    <h1>À <span class='accent'>mesa.</span></h1>
+    <p>Uma carta que muda com a época. O que está bom hoje é o que servimos hoje.</p>
+  </div>
+</section>
+
+<nav class="crumbs" aria-label="Migalhas">
+  <a href="index.html">Início</a><span>/</span>Ementa
+</nav>
+<!-- ============ MENU ============ -->
+<section class="section section--top menu" id="menu">
+  <div class="section__wrap">
+        <div class="menu__tabs reveal" role="tablist" aria-label="Categorias do menu">
+      <button class="menu__tab active" role="tab" aria-selected="true" data-panel="tabuas"><span class="t-num">01</span>Tábuas</button>
+      <button class="menu__tab" role="tab" aria-selected="false" data-panel="entradas"><span class="t-num">02</span>Entradas &amp; Petiscos</button>
+      <button class="menu__tab" role="tab" aria-selected="false" data-panel="brasa"><span class="t-num">03</span>Da Brasa</button>
+      <button class="menu__tab" role="tab" aria-selected="false" data-panel="sobremesas"><span class="t-num">04</span>Sobremesas</button>
+    </div>
+
+    <div class="menu__panel active" id="panel-tabuas" role="tabpanel">
+      <div class="dish">
+        <div class="dish__name">Tábua d'Aço <span class="dish__tag dish__tag--gold">A casa</span></div>
+        <div class="dish__price">24€</div>
+        <p class="dish__desc">Enchidos curados, presunto, queijos da região e broa quente. Para partilhar sem contas.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Tábua do Campo</div>
+        <div class="dish__price">19€</div>
+        <p class="dish__desc">Seleção de enchidos regionais, azeitonas da casa, pimentos assados e pão de fermentação lenta.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Tábua de Queijos</div>
+        <div class="dish__price">17€</div>
+        <p class="dish__desc">Cinco queijos nacionais, doce de abóbora, marmelada e frutos secos.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Tábua do Mar <span class="dish__tag">Do dia</span></div>
+        <div class="dish__price">26€</div>
+        <p class="dish__desc">Polvo, camarão e peixe fumado da lota, servidos mornos sobre a tábua.</p>
+      </div>
+    </div>
+
+    <div class="menu__panel" id="panel-entradas" role="tabpanel" hidden>
+      <div class="dish">
+        <div class="dish__name">Pão da casa &amp; manteiga de alho</div>
+        <div class="dish__price">4,5€</div>
+        <p class="dish__desc">Fermentação de dois dias, tostado na brasa, com manteiga de alho e ervas.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Cogumelos na brasa</div>
+        <div class="dish__price">8€</div>
+        <p class="dish__desc">Cogumelos do momento, azeite da região, flor de sal e limão.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Peixinhos da horta</div>
+        <div class="dish__price">7€</div>
+        <p class="dish__desc">Feijão-verde em tempura leve, ao jeito antigo, com maionese de coentros.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Moelas à moda antiga</div>
+        <div class="dish__price">7,5€</div>
+        <p class="dish__desc">Estufadas lentamente em vinho e louro, com pão para o molho.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Croquetes de vitela</div>
+        <div class="dish__price">6,5€</div>
+        <p class="dish__desc">Recheio de vitela estufada, crosta estaladiça, mostarda da casa.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Pimentos de padrón</div>
+        <div class="dish__price">6€</div>
+        <p class="dish__desc">Salteados, flor de sal e um fio de azeite virgem extra.</p>
+      </div>
+    </div>
+
+    <div class="menu__panel" id="panel-brasa" role="tabpanel" hidden>
+      <div class="dish">
+        <div class="dish__name">Picanha maturada <span class="dish__tag dish__tag--gold">Assinatura</span></div>
+        <div class="dish__price">21€</div>
+        <p class="dish__desc">Maturada 30 dias, selada na brasa, com sal grosso e legumes da região.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Costeleta de porco preto</div>
+        <div class="dish__price">18€</div>
+        <p class="dish__desc">Porco preto alentejano, migas de pão e grelos salteados.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Polvo à lagareiro na brasa</div>
+        <div class="dish__price">22€</div>
+        <p class="dish__desc">Polvo tenro, batata a murro e um banho generoso de azeite e alho.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Robalo inteiro grelhado</div>
+        <div class="dish__price">20€</div>
+        <p class="dish__desc">Peixe do dia, escalado e passado pela lenha, com legumes da época.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Legumes do vale grelhados <span class="dish__tag">Vegetariano</span></div>
+        <div class="dish__price">13€</div>
+        <p class="dish__desc">Seleção do horto local na brasa, molho de iogurte e ervas frescas.</p>
+      </div>
+    </div>
+
+    <div class="menu__panel" id="panel-sobremesas" role="tabpanel" hidden>
+      <div class="dish">
+        <div class="dish__name">Arroz-doce queimado</div>
+        <div class="dish__price">5€</div>
+        <p class="dish__desc">Cremoso, com casca de limão e uma crosta de açúcar queimada na hora.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Toucinho-do-céu</div>
+        <div class="dish__price">5,5€</div>
+        <p class="dish__desc">Receita conventual, amêndoa e gema, com um fio de calda de laranja.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Ananás na brasa</div>
+        <div class="dish__price">6€</div>
+        <p class="dish__desc">Grelhado com mel e hortelã, gelado de nata da casa.</p>
+      </div>
+      <div class="dish">
+        <div class="dish__name">Encharcada do convento</div>
+        <div class="dish__price">5,5€</div>
+        <p class="dish__desc">Doce de ovos tostado, para os que gostam de acabar em grande.</p>
+      </div>
+    </div>
+
+    <p class="menu__note reveal">Preços com IVA incluído · Carta sujeita à disponibilidade do dia · Informe-nos sobre alergénios</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<div class="footer">
+  <div class="footer__grid">
+    <div>
+      <img src="assets/logo-tabua-daco-claro.png" alt="Tábua d'Aço" class="footer__logo" width="320" height="203">
+      <p class="footer__tag">Cozinha do Douro com sotaque do Tirol. Na margem esquerda do rio, em Tabuaço, desde 2003.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navegar</h4>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="ementa.html">Ementa</a>
+      <a href="contactos.html">Contactos</a>
+    </div>
+    <div class="footer__col">
+      <h4>Visite-nos</h4>
+      <p>R. Môa, Edifício Piscinas Municipais<br>5120-372 Tabuaço</p>
+      <p><a href="tel:+351254781711">+351 254 781 711</a></p>
+      <div class="footer__social">
+        <a href="https://facebook.com/restaurante.tabuadaco" target="_blank" rel="noopener" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+        <a href="mailto:geral@restaurantetabuadaco.com" aria-label="Email"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Tábua d'Aço — Todos os direitos reservados</span>
+    <span>Design &amp; desenvolvimento — Jonathan Antunes</span>
+  </div>
+</div>
+
+<button class="totop" id="totop" aria-label="Voltar ao topo">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
