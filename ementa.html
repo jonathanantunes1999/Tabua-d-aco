@@ -85,15 +85,24 @@
 <!-- ============ MENU ============ -->
 <section class="section section--top menu" id="menu">
   <div class="section__wrap">
-    <div class="menu__tabs reveal" role="tablist" aria-label="Categorias da ementa">
-      <button class="menu__tab active" role="tab" aria-selected="true" data-panel="comida"><span class="t-num">01</span>Comida</button>
-      <button class="menu__tab" role="tab" aria-selected="false" data-panel="vinhos"><span class="t-num">02</span>Vinhos &amp; Bebidas</button>
+    <div class="menu__filters reveal" role="tablist" aria-label="Filtrar a ementa">
+      <button class="mfilter active" role="tab" aria-selected="true" data-filter="all">Toda a ementa</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="entradas">Entradas</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="sugestoes">Sugestões do Chef</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="especialidade">Especialidade</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="peixe">Peixe</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="carne">Carne</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="massa">Massa</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="vegetariano">Vegetariano</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="criancas">Crianças</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="vinhos">Vinhos</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="porto">Vinho do Porto</button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="bebidas">Bebidas</button>
     </div>
 
-    <!-- ===================== COMIDA ===================== -->
-    <div class="menu__panel active" id="panel-comida" role="tabpanel">
+    <div class="menu__grid" id="menuGrid">
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="entradas">
         <h3 class="mcat__title">Entradas</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Pão de alho</span><span class="mrow__price">3,50€</span></div>
@@ -110,7 +119,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="sugestoes">
         <h3 class="mcat__title">Sugestões do Chef</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Sugestão do chef <span class="mrow__note">(dose)</span></span><span class="mrow__price">17,00€</span></div>
@@ -121,7 +130,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="especialidade">
         <h3 class="mcat__title">Especialidade da Casa</h3>
         <p class="mcat__note">* Por encomenda</p>
         <div class="mlist">
@@ -129,7 +138,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="peixe">
         <h3 class="mcat__title">Peixe</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Bacalhau <span class="mrow__note">(meia dose)</span></span><span class="mrow__price">10,00€</span></div>
@@ -144,7 +153,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="carne">
         <h3 class="mcat__title">Carne</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Bife do lombo com molho do Porto</span><span class="mrow__price">19,50€</span></div>
@@ -160,7 +169,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="massa">
         <h3 class="mcat__title">Massa</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Esparguete à bolonhesa</span><span class="mrow__price">10,00€</span></div>
@@ -169,14 +178,14 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vegetariano">
         <h3 class="mcat__title">Vegetariano</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Arroz de legumes com cogumelos e ovo estrelado</span><span class="mrow__price">10,00€</span></div>
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="criancas">
         <h3 class="mcat__title">Menu Crianças</h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Salsichas com batata frita, arroz e ovo estrelado</span><span class="mrow__price">6,00€</span></div>
@@ -186,12 +195,7 @@
         </div>
       </div>
 
-    </div>
-
-    <!-- ===================== VINHOS & BEBIDAS ===================== -->
-    <div class="menu__panel" id="panel-vinhos" role="tabpanel" hidden>
-
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vinhos">
         <h3 class="mcat__title">Douro · Tinto Reserva</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Desnível 18</span><span class="mrow__price">45,00€</span></div>
@@ -213,7 +217,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vinhos">
         <h3 class="mcat__title">Douro · Tinto</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Quinta do Tedo 2017</span><span class="mrow__price">17,00€</span></div>
@@ -236,7 +240,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vinhos">
         <h3 class="mcat__title">Douro · Branco Reserva</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Quinta da Moita 2019</span><span class="mrow__price">16,00€</span></div>
@@ -256,7 +260,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vinhos">
         <h3 class="mcat__title">Douro · Rosé</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Vinha dos 7 Anos</span><span class="mrow__price">11,00€</span></div>
@@ -266,7 +270,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vinhos">
         <h3 class="mcat__title">Espumante</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Raposeira Reserva Bruto / Meio Seco</span><span class="mrow__price">15,00€</span></div>
@@ -275,7 +279,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="porto">
         <h3 class="mcat__title">Vinho do Porto</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Porto Reccua 40 anos</span><span class="mrow__price">16,00€</span></div>
@@ -287,7 +291,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="vinhos">
         <h3 class="mcat__title">Vinho da Casa</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Vinho tinto 750 ml</span><span class="mrow__price">7,00€</span></div>
@@ -297,7 +301,7 @@
         </div>
       </div>
 
-      <div class="mcat reveal">
+      <div class="mcat reveal" data-cat="bebidas">
         <h3 class="mcat__title">Bebidas</h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Sumos 1,5 L</span><span class="mrow__price">3,50€</span></div>

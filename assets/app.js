@@ -75,16 +75,19 @@
   start();
   }
 
-  /* ---------- tabs do menu ---------- */
-  var tabs=document.querySelectorAll('.menu__tab');
-  var panels=document.querySelectorAll('.menu__panel');
-  tabs.forEach(function(tab){
-    tab.addEventListener('click',function(){
-      tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
-      panels.forEach(function(p){p.classList.remove('active');p.hidden=true;});
-      tab.classList.add('active');tab.setAttribute('aria-selected','true');
-      var target=document.getElementById('panel-'+tab.dataset.panel);
-      target.classList.add('active');target.hidden=false;
+  /* ---------- filtros da ementa ---------- */
+  var filters=document.querySelectorAll('.mfilter');
+  var cards=document.querySelectorAll('.menu__grid .mcat');
+  filters.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      filters.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false');});
+      btn.classList.add('active');btn.setAttribute('aria-selected','true');
+      var f=btn.dataset.filter;
+      cards.forEach(function(c){
+        var show=(f==='all'||c.dataset.cat===f);
+        c.hidden=!show;
+        if(show)c.classList.add('in');
+      });
     });
   });
 
