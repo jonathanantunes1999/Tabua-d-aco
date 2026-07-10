@@ -85,121 +85,218 @@
 <!-- ============ MENU ============ -->
 <section class="section section--top menu" id="menu">
   <div class="section__wrap">
-        <div class="menu__tabs reveal" role="tablist" aria-label="Categorias do menu">
-      <button class="menu__tab active" role="tab" aria-selected="true" data-panel="tabuas"><span class="t-num">01</span>Tábuas</button>
-      <button class="menu__tab" role="tab" aria-selected="false" data-panel="entradas"><span class="t-num">02</span>Entradas &amp; Petiscos</button>
-      <button class="menu__tab" role="tab" aria-selected="false" data-panel="brasa"><span class="t-num">03</span>Da Brasa</button>
-      <button class="menu__tab" role="tab" aria-selected="false" data-panel="sobremesas"><span class="t-num">04</span>Sobremesas</button>
+    <div class="menu__tabs reveal" role="tablist" aria-label="Categorias da ementa">
+      <button class="menu__tab active" role="tab" aria-selected="true" data-panel="comida"><span class="t-num">01</span>Comida</button>
+      <button class="menu__tab" role="tab" aria-selected="false" data-panel="vinhos"><span class="t-num">02</span>Vinhos &amp; Bebidas</button>
     </div>
 
-    <div class="menu__panel active" id="panel-tabuas" role="tabpanel">
-      <div class="dish">
-        <div class="dish__name">Tábua d'Aço <span class="dish__tag dish__tag--gold">A casa</span></div>
-        <div class="dish__price">24€</div>
-        <p class="dish__desc">Enchidos curados, presunto, queijos da região e broa quente. Para partilhar sem contas.</p>
+    <!-- ===================== COMIDA ===================== -->
+    <div class="menu__panel active" id="panel-comida" role="tabpanel">
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Sugestões do Chef</h3>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Sugestão do chef <span class="mrow__note">(dose)</span></span><span class="mrow__price">17,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Sugestão do chef <span class="mrow__note">(meia dose)</span></span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Almoço <span class="mrow__note">(só ao meio-dia)</span></span><span class="mrow__price">8,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Leitão no forno <span class="mrow__note">(2 pessoas)</span></span><span class="mrow__price">25,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Borrego no forno <span class="mrow__note">(2 pessoas)</span></span><span class="mrow__price">24,00€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Tábua do Campo</div>
-        <div class="dish__price">19€</div>
-        <p class="dish__desc">Seleção de enchidos regionais, azeitonas da casa, pimentos assados e pão de fermentação lenta.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Especialidade da Casa</h3>
+        <p class="mcat__note">* Por encomenda</p>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Guisado de javali com batata cozida <span class="mrow__note">(2 pax)*</span></span><span class="mrow__price">25,00€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Tábua de Queijos</div>
-        <div class="dish__price">17€</div>
-        <p class="dish__desc">Cinco queijos nacionais, doce de abóbora, marmelada e frutos secos.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Peixe</h3>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Bacalhau <span class="mrow__note">(meia dose)</span></span><span class="mrow__price">10,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Bacalhau com broa e coentros na telha</span><span class="mrow__price">19,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Bacalhau “Chefe Thomas”</span><span class="mrow__price">19,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Bacalhau à lagareiro</span><span class="mrow__price">19,00€</span><span class="mrow__desc">Bacalhau na brasa, batata a murro e azeite quente.</span></div>
+          <div class="mrow"><span class="mrow__name">Bacalhau “Zé do Pipo”</span><span class="mrow__price">19,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Polvo à lagareiro</span><span class="mrow__price">21,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Garoupa grelhada com molho de limão e batata assada</span><span class="mrow__price">12,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Dourada grelhada com batata assada e salada</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Espetada de lulas</span><span class="mrow__price">16,00€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Tábua do Mar <span class="dish__tag">Do dia</span></div>
-        <div class="dish__price">26€</div>
-        <p class="dish__desc">Polvo, camarão e peixe fumado da lota, servidos mornos sobre a tábua.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Carne</h3>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Bife do lombo com molho do Porto</span><span class="mrow__price">19,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Bife do lombo com alho gratinado</span><span class="mrow__price">19,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Medalhões de porco com molho de cogumelos silvestres</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Medalhões de porco com mostarda antiga</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Mista de carne grelhada com batata frita, molhos e salada</span><span class="mrow__price">23,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Picanha “Tábua d'Aço”</span><span class="mrow__price">22,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Costeleta grelhada <span class="mrow__note">(chuletón)</span></span><span class="mrow__price">22,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Costeletas de borrego à caçador</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Costeleta de vitela à moda do “Douro”</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Filetes de frango à indiana com ananás e arroz</span><span class="mrow__price">14,00€</span></div>
+        </div>
       </div>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Massa</h3>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Esparguete à bolonhesa</span><span class="mrow__price">10,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Esparguete à carbonara</span><span class="mrow__price">10,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Massa de marisco <span class="mrow__note">(2 pessoas)</span></span><span class="mrow__price">29,00€</span></div>
+        </div>
+      </div>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Vegetariano</h3>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Arroz de legumes com cogumelos e ovo estrelado</span><span class="mrow__price">10,00€</span></div>
+        </div>
+      </div>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Menu Crianças</h3>
+        <div class="mlist">
+          <div class="mrow"><span class="mrow__name">Salsichas com batata frita, arroz e ovo estrelado</span><span class="mrow__price">6,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Nuggets de frango com arroz e batata frita</span><span class="mrow__price">6,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Esparguete à bolonhesa</span><span class="mrow__price">6,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Hambúrguer com batata frita e ovo</span><span class="mrow__price">6,00€</span></div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="menu__panel" id="panel-entradas" role="tabpanel" hidden>
-      <div class="dish">
-        <div class="dish__name">Pão da casa &amp; manteiga de alho</div>
-        <div class="dish__price">4,5€</div>
-        <p class="dish__desc">Fermentação de dois dias, tostado na brasa, com manteiga de alho e ervas.</p>
+    <!-- ===================== VINHOS & BEBIDAS ===================== -->
+    <div class="menu__panel" id="panel-vinhos" role="tabpanel" hidden>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Douro · Tinto Reserva</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Desnível 18</span><span class="mrow__price">45,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Deserta Seleção 2013</span><span class="mrow__price">41,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Deserta Premium 2012</span><span class="mrow__price">35,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Desnível 17</span><span class="mrow__price">28,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Padrela Reserva 2018</span><span class="mrow__price">19,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Monte Travesso Reserva 2019</span><span class="mrow__price">19,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Espinho Reserva 2015</span><span class="mrow__price">18,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Carregosa Reserva 2018</span><span class="mrow__price">18,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Oboé Superior 2016</span><span class="mrow__price">18,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Cabeça de Burro Reserva 2016</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Encostas da Amarelinha Reserva</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Filoco Reserva 2015</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Herédias Reserva 2019</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Fagote Reserva 2019</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Encostas do Peso Reserva 2013</span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Môa Reserva</span><span class="mrow__price">9,50€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Cogumelos na brasa</div>
-        <div class="dish__price">8€</div>
-        <p class="dish__desc">Cogumelos do momento, azeite da região, flor de sal e limão.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Douro · Tinto</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Quinta do Tedo 2017</span><span class="mrow__price">17,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Desnível Touriga Franca 2020</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Convento 2016</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Desnível Touriga Nacional 2020</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta das Herédias 2019</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Padrela 2018</span><span class="mrow__price">12,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Vinha dos 7 anos 2018</span><span class="mrow__price">12,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Portal 2018</span><span class="mrow__price">12,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Monte Travesso 2019</span><span class="mrow__price">12,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Encostas da Amarelinha 2017</span><span class="mrow__price">11,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Filoco</span><span class="mrow__price">11,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Aveleira 2014</span><span class="mrow__price">10,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Carregosa 2019</span><span class="mrow__price">10,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Douro Reccua 2017</span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Môa</span><span class="mrow__price">8,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Incantum 2019</span><span class="mrow__price">8,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Incantum <span class="mrow__note">(0,375L)</span></span><span class="mrow__price">6,00€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Peixinhos da horta</div>
-        <div class="dish__price">7€</div>
-        <p class="dish__desc">Feijão-verde em tempura leve, ao jeito antigo, com maionese de coentros.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Douro · Branco Reserva</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Quinta da Moita 2019</span><span class="mrow__price">16,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Desnível Alvarinho Reserva 2019</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Cabeça de Burro Reserva 2018</span><span class="mrow__price">14,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Herédias DOC 2020</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta das Herédias 2019</span><span class="mrow__price">14,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Vinha dos 7 Anos 2020</span><span class="mrow__price">12,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Carregosa 2020</span><span class="mrow__price">12,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Passa Frio 2017</span><span class="mrow__price">11,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Padrela 2019</span><span class="mrow__price">11,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Monte Travesso 2019</span><span class="mrow__price">11,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Môa</span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta do Filoco 2019</span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Incantum 2018</span><span class="mrow__price">8,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Incantum <span class="mrow__note">(0,375L)</span></span><span class="mrow__price">6,00€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Moelas à moda antiga</div>
-        <div class="dish__price">7,5€</div>
-        <p class="dish__desc">Estufadas lentamente em vinho e louro, com pão para o molho.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Douro · Rosé</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Vinha dos 7 Anos</span><span class="mrow__price">11,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Quinta da Padrela 2019</span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Muros de Vinha</span><span class="mrow__price">9,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Filoco Rosé</span><span class="mrow__price">9,50€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Croquetes de vitela</div>
-        <div class="dish__price">6,5€</div>
-        <p class="dish__desc">Recheio de vitela estufada, crosta estaladiça, mostarda da casa.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Espumante</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Raposeira Reserva Bruto / Meio Seco</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Murganheira Reserva Bruto</span><span class="mrow__price">15,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Terras do Demo Bruto Branco / Rosé</span><span class="mrow__price">15,00€</span></div>
+        </div>
       </div>
-      <div class="dish">
-        <div class="dish__name">Pimentos de padrón</div>
-        <div class="dish__price">6€</div>
-        <p class="dish__desc">Salteados, flor de sal e um fio de azeite virgem extra.</p>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Vinho do Porto</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Porto Reccua 40 anos</span><span class="mrow__price">16,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Porto Reccua 30 anos</span><span class="mrow__price">11,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Porto Reccua 20 anos</span><span class="mrow__price">8,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Porto Reccua 10 anos</span><span class="mrow__price">6,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Cockburn's — Special Reserve</span><span class="mrow__price">4,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Porto Reccua Tawny</span><span class="mrow__price">2,50€</span></div>
+        </div>
       </div>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Vinho da Casa</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Vinho tinto 750 ml</span><span class="mrow__price">7,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Vinho branco 750 ml</span><span class="mrow__price">7,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Vinho tinto 375 ml</span><span class="mrow__price">4,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Vinho branco 375 ml</span><span class="mrow__price">4,00€</span></div>
+        </div>
+      </div>
+
+      <div class="mcat reveal">
+        <h3 class="mcat__title">Bebidas</h3>
+        <div class="mlist mlist--two">
+          <div class="mrow"><span class="mrow__name">Sumos 1,5 L</span><span class="mrow__price">3,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Água 1,5 L</span><span class="mrow__price">2,50€</span></div>
+          <div class="mrow"><span class="mrow__name">Fino</span><span class="mrow__price">1,30€</span></div>
+          <div class="mrow"><span class="mrow__name">Coca-Cola</span><span class="mrow__price">1,30€</span></div>
+          <div class="mrow"><span class="mrow__name">Sumol</span><span class="mrow__price">1,30€</span></div>
+          <div class="mrow"><span class="mrow__name">Frize</span><span class="mrow__price">1,30€</span></div>
+          <div class="mrow"><span class="mrow__name">Água</span><span class="mrow__price">1,00€</span></div>
+          <div class="mrow"><span class="mrow__name">Cerveja mini</span><span class="mrow__price">1,00€</span></div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="menu__panel" id="panel-brasa" role="tabpanel" hidden>
-      <div class="dish">
-        <div class="dish__name">Picanha maturada <span class="dish__tag dish__tag--gold">Assinatura</span></div>
-        <div class="dish__price">21€</div>
-        <p class="dish__desc">Maturada 30 dias, selada na brasa, com sal grosso e legumes da região.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Costeleta de porco preto</div>
-        <div class="dish__price">18€</div>
-        <p class="dish__desc">Porco preto alentejano, migas de pão e grelos salteados.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Polvo à lagareiro na brasa</div>
-        <div class="dish__price">22€</div>
-        <p class="dish__desc">Polvo tenro, batata a murro e um banho generoso de azeite e alho.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Robalo inteiro grelhado</div>
-        <div class="dish__price">20€</div>
-        <p class="dish__desc">Peixe do dia, escalado e passado pela lenha, com legumes da época.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Legumes do vale grelhados <span class="dish__tag">Vegetariano</span></div>
-        <div class="dish__price">13€</div>
-        <p class="dish__desc">Seleção do horto local na brasa, molho de iogurte e ervas frescas.</p>
-      </div>
-    </div>
-
-    <div class="menu__panel" id="panel-sobremesas" role="tabpanel" hidden>
-      <div class="dish">
-        <div class="dish__name">Arroz-doce queimado</div>
-        <div class="dish__price">5€</div>
-        <p class="dish__desc">Cremoso, com casca de limão e uma crosta de açúcar queimada na hora.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Toucinho-do-céu</div>
-        <div class="dish__price">5,5€</div>
-        <p class="dish__desc">Receita conventual, amêndoa e gema, com um fio de calda de laranja.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Ananás na brasa</div>
-        <div class="dish__price">6€</div>
-        <p class="dish__desc">Grelhado com mel e hortelã, gelado de nata da casa.</p>
-      </div>
-      <div class="dish">
-        <div class="dish__name">Encharcada do convento</div>
-        <div class="dish__price">5,5€</div>
-        <p class="dish__desc">Doce de ovos tostado, para os que gostam de acabar em grande.</p>
-      </div>
-    </div>
-
-    <p class="menu__note reveal">Preços com IVA incluído · Carta sujeita à disponibilidade do dia · Informe-nos sobre alergénios</p>
+    <p class="menu__note reveal">Preços com IVA incluído · Ementa sujeita à disponibilidade do dia · Informe-nos sobre alergénios</p>
   </div>
 </section>
 
