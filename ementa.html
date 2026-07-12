@@ -70,9 +70,9 @@
   <div class="pagehero__bg"></div>
   <div class="pagehero__scrim"></div>
   <div class="pagehero__inner">
-    <span class="pagehero__k">Ementa</span>
-    <h1>À <span class='accent'>mesa.</span></h1>
-    <p>Uma carta que muda com a época. O que está bom hoje é o que servimos hoje.</p>
+    <span class="pagehero__k" data-i18n="nav_menu">Ementa</span>
+    <h1 data-i18n="m_h1">À <span class='accent'>mesa.</span></h1>
+    <p data-i18n="m_sub">Uma carta que muda com a época. O que está bom hoje é o que servimos hoje.</p>
   </div>
 </section>
 
@@ -83,16 +83,16 @@
 <section class="section section--top menu" id="menu">
   <div class="section__wrap">
     <div class="menu__filters reveal" role="tablist" aria-label="Secções da ementa">
-      <button class="mfilter active" role="tab" aria-selected="true" data-filter="entradas">Entradas</button>
-      <button class="mfilter" role="tab" aria-selected="false" data-filter="principais">Principais</button>
-      <button class="mfilter" role="tab" aria-selected="false" data-filter="sobremesas">Sobremesas</button>
-      <button class="mfilter" role="tab" aria-selected="false" data-filter="vinhos">Vinhos</button>
+      <button class="mfilter active" role="tab" aria-selected="true" data-filter="entradas"><span data-i18n="cat_entradas">Entradas</span></button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="principais"><span data-i18n="f_mains">Principais</span></button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="sobremesas"><span data-i18n="cat_desserts">Sobremesas</span></button>
+      <button class="mfilter" role="tab" aria-selected="false" data-filter="vinhos"><span data-i18n="f_wines">Vinhos</span></button>
     </div>
 
     <div class="menu__grid" id="menuGrid">
 
       <div class="mcat reveal" data-cat="entradas">
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16h16"/><path d="M5 16a7 7 0 0 1 14 0"/><path d="M12 9V7"/><circle cx="12" cy="5.6" r="1"/></svg>Entradas</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16h16"/><path d="M5 16a7 7 0 0 1 14 0"/><path d="M12 9V7"/><circle cx="12" cy="5.6" r="1"/></svg><span data-i18n="cat_entradas">Entradas</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Pão de alho</span><span class="mrow__price">3,50€</span></div>
           <div class="mrow"><span class="mrow__name">Chouriço ou alheira assados</span><span class="mrow__price">4,50€</span></div>
@@ -109,7 +109,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 14h9v4a1 1 0 0 1-1 1H8.5a1 1 0 0 1-1-1z"/><path d="M7.5 14a3.4 3.4 0 0 1-1-6.6 3.4 3.4 0 0 1 5.5-2 3.4 3.4 0 0 1 5.5 2A3.4 3.4 0 0 1 16.5 14"/><path d="M9.5 19v-3M12 19v-3M14.5 19v-3"/></svg>Sugestões do Chef</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 14h9v4a1 1 0 0 1-1 1H8.5a1 1 0 0 1-1-1z"/><path d="M7.5 14a3.4 3.4 0 0 1-1-6.6 3.4 3.4 0 0 1 5.5-2 3.4 3.4 0 0 1 5.5 2A3.4 3.4 0 0 1 16.5 14"/><path d="M9.5 19v-3M12 19v-3M14.5 19v-3"/></svg><span data-i18n="cat_chef">Sugestões do Chef</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Sugestão do chef <span class="mrow__note">(dose)</span></span><span class="mrow__price">17,00€</span></div>
           <div class="mrow"><span class="mrow__name">Sugestão do chef <span class="mrow__note">(meia dose)</span></span><span class="mrow__price">9,50€</span></div>
@@ -120,15 +120,15 @@
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.5 5.3 5.5.7-4 3.9 1 5.6L12 16.9 6.5 19l1-5.6-4-3.9 5.5-.7z"/></svg>Especialidade da Casa</h3>
-        <p class="mcat__note">* Por encomenda</p>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.5 5.3 5.5.7-4 3.9 1 5.6L12 16.9 6.5 19l1-5.6-4-3.9 5.5-.7z"/></svg><span data-i18n="cat_special">Especialidade da Casa</span></h3>
+        <p class="mcat__note" data-i18n="m_order">* Por encomenda</p>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Guisado de javali com batata cozida <span class="mrow__note">(2 pax)*</span></span><span class="mrow__price">25,00€</span></div>
         </div>
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12s-3.5-5-8.5-5S4 12 4 12s3.5 5 8.5 5S21 12 21 12z"/><path d="M4 12 1.5 9v6z"/><circle cx="16" cy="11" r="1" fill="currentColor" stroke="none"/></svg>Peixe</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12s-3.5-5-8.5-5S4 12 4 12s3.5 5 8.5 5S21 12 21 12z"/><path d="M4 12 1.5 9v6z"/><circle cx="16" cy="11" r="1" fill="currentColor" stroke="none"/></svg><span data-i18n="cat_fish">Peixe</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Bacalhau <span class="mrow__note">(meia dose)</span></span><span class="mrow__price">10,00€</span></div>
           <div class="mrow"><span class="mrow__name">Bacalhau com broa e coentros na telha</span><span class="mrow__price">19,00€</span></div>
@@ -143,7 +143,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.4 10.6l-5.8 5.8"/><path d="M7.6 16.4a2.4 2.4 0 1 0-2 2 2.4 2.4 0 1 0-2-2 2.4 2.4 0 0 0 2 2 2.4 2.4 0 0 0 2-2z"/><path d="M13.4 10.6a3.5 3.5 0 1 1 5-5 3.5 3.5 0 0 1-1.2 6.6 3.5 3.5 0 0 1-3.8-1.6z"/></svg>Carne</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.4 10.6l-5.8 5.8"/><path d="M7.6 16.4a2.4 2.4 0 1 0-2 2 2.4 2.4 0 1 0-2-2 2.4 2.4 0 0 0 2 2 2.4 2.4 0 0 0 2-2z"/><path d="M13.4 10.6a3.5 3.5 0 1 1 5-5 3.5 3.5 0 0 1-1.2 6.6 3.5 3.5 0 0 1-3.8-1.6z"/></svg><span data-i18n="cat_meat">Carne</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Bife do lombo com molho do Porto</span><span class="mrow__price">19,50€</span></div>
           <div class="mrow"><span class="mrow__name">Bife do lombo com alho gratinado</span><span class="mrow__price">19,50€</span></div>
@@ -159,7 +159,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M9 4c0 1-1 1-1 2s1 1 1 2M13 4c0 1-1 1-1 2s1 1 1 2"/></svg>Massa</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M9 4c0 1-1 1-1 2s1 1 1 2M13 4c0 1-1 1-1 2s1 1 1 2"/></svg><span data-i18n="cat_pasta">Massa</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Esparguete à bolonhesa</span><span class="mrow__price">10,00€</span></div>
           <div class="mrow"><span class="mrow__name">Esparguete à carbonara</span><span class="mrow__price">10,00€</span></div>
@@ -168,14 +168,14 @@
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20C4 11 10 5 20 4c0 10-6 15-15 15z"/><path d="M4.5 19.5C7 15 11 12 15 10"/></svg>Vegetariano</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20C4 11 10 5 20 4c0 10-6 15-15 15z"/><path d="M4.5 19.5C7 15 11 12 15 10"/></svg><span data-i18n="cat_veg">Vegetariano</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Arroz de legumes com cogumelos e ovo estrelado</span><span class="mrow__price">10,00€</span></div>
         </div>
       </div>
 
       <div class="mcat reveal" data-cat="principais" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10a4 4 0 1 1 8 0"/><path d="M7.7 11h8.6L12 21z"/></svg>Menu Crianças</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10a4 4 0 1 1 8 0"/><path d="M7.7 11h8.6L12 21z"/></svg><span data-i18n="cat_kids">Menu Crianças</span></h3>
         <div class="mlist">
           <div class="mrow"><span class="mrow__name">Salsichas com batata frita, arroz e ovo estrelado</span><span class="mrow__price">6,00€</span></div>
           <div class="mrow"><span class="mrow__name">Nuggets de frango com arroz e batata frita</span><span class="mrow__price">6,00€</span></div>
@@ -185,12 +185,12 @@
       </div>
 
       <div class="mcat reveal" data-cat="sobremesas" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10a4 4 0 1 1 8 0"/><path d="M7.7 11h8.6L12 21z"/></svg>Sobremesas</h3>
-        <p class="mcat__soon">Em breve. Peça ao empregado as sobremesas do dia — leite-creme, bolo-rei e outras da casa.</p>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10a4 4 0 1 1 8 0"/><path d="M7.7 11h8.6L12 21z"/></svg><span data-i18n="cat_desserts">Sobremesas</span></h3>
+        <p class="mcat__soon" data-i18n="m_soon">Em breve. Peça ao empregado as sobremesas do dia — leite-creme, bolo-rei e outras da casa.</p>
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg>Douro · Tinto Reserva</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg><span data-i18n="cat_red_res">Douro · Tinto Reserva</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Desnível 18</span><span class="mrow__price">45,00€</span></div>
           <div class="mrow"><span class="mrow__name">Quinta da Deserta Seleção 2013</span><span class="mrow__price">41,00€</span></div>
@@ -212,7 +212,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg>Douro · Tinto</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg><span data-i18n="cat_red">Douro · Tinto</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Quinta do Tedo 2017</span><span class="mrow__price">17,00€</span></div>
           <div class="mrow"><span class="mrow__name">Desnível Touriga Franca 2020</span><span class="mrow__price">15,00€</span></div>
@@ -235,7 +235,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg>Douro · Branco Reserva</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg><span data-i18n="cat_white_res">Douro · Branco Reserva</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Quinta da Moita 2019</span><span class="mrow__price">16,00€</span></div>
           <div class="mrow"><span class="mrow__name">Desnível Alvarinho Reserva 2019</span><span class="mrow__price">15,00€</span></div>
@@ -255,7 +255,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg>Douro · Rosé</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg><span data-i18n="cat_rose">Douro · Rosé</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Vinha dos 7 Anos</span><span class="mrow__price">11,00€</span></div>
           <div class="mrow"><span class="mrow__name">Quinta da Padrela 2019</span><span class="mrow__price">9,50€</span></div>
@@ -265,7 +265,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/><path d="M18.5 2.5l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2L16.8 4l1.2-.5z" fill="currentColor" stroke="none"/></svg>Espumante</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/><path d="M18.5 2.5l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2L16.8 4l1.2-.5z" fill="currentColor" stroke="none"/></svg><span data-i18n="cat_sparkling">Espumante</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Raposeira Reserva Bruto / Meio Seco</span><span class="mrow__price">15,00€</span></div>
           <div class="mrow"><span class="mrow__name">Murganheira Reserva Bruto</span><span class="mrow__price">15,00€</span></div>
@@ -274,7 +274,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 3h3v2.5l1 2.5V19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8l1-2.5z"/><path d="M9.5 12h5"/></svg>Vinho do Porto</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 3h3v2.5l1 2.5V19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8l1-2.5z"/><path d="M9.5 12h5"/></svg><span data-i18n="cat_port">Vinho do Porto</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Porto Reccua 40 anos</span><span class="mrow__price">16,00€</span></div>
           <div class="mrow"><span class="mrow__name">Porto Reccua 30 anos</span><span class="mrow__price">11,50€</span></div>
@@ -286,7 +286,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg>Vinho da Casa</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 14v5M8 21h8"/></svg><span data-i18n="cat_house_wine">Vinho da Casa</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Vinho tinto 750 ml</span><span class="mrow__price">7,00€</span></div>
           <div class="mrow"><span class="mrow__name">Vinho branco 750 ml</span><span class="mrow__price">7,00€</span></div>
@@ -296,7 +296,7 @@
       </div>
 
       <div class="mcat reveal" data-cat="vinhos" hidden>
-        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 5h12l-1.4 15a1 1 0 0 1-1 .9H8.4a1 1 0 0 1-1-.9z"/><path d="M15 5l2.5-2"/></svg>Bebidas</h3>
+        <h3 class="mcat__title"><svg class="mcat__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 5h12l-1.4 15a1 1 0 0 1-1 .9H8.4a1 1 0 0 1-1-.9z"/><path d="M15 5l2.5-2"/></svg><span data-i18n="cat_drinks">Bebidas</span></h3>
         <div class="mlist mlist--two">
           <div class="mrow"><span class="mrow__name">Sumos 1,5 L</span><span class="mrow__price">3,50€</span></div>
           <div class="mrow"><span class="mrow__name">Água 1,5 L</span><span class="mrow__price">2,50€</span></div>
@@ -311,7 +311,7 @@
 
     </div>
 
-    <p class="menu__note reveal">Preços com IVA incluído · Ementa sujeita à disponibilidade do dia · Informe-nos sobre alergénios</p>
+    <p class="menu__note reveal" data-i18n="m_footnote">Preços com IVA incluído · Ementa sujeita à disponibilidade do dia · Informe-nos sobre alergénios</p>
   </div>
 </section>
 
