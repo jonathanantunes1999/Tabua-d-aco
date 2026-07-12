@@ -6,6 +6,14 @@
 (function(){
   var T = {
     en: {
+      /* início */
+      btn_menu:"View Menu", btn_book:"Book a Table",
+      mark1_s:"Top three at the festival", mark2_s:"Certificate of Excellence", mark3_t:"Since 2003",
+      home_eyebrow:"The house",
+      home_h2:"Good food, good wine <span class='accent'>and a fine view.</span>",
+      t1_h3:"The Douro at the table", t1_p:"Tabuaço, the river's left bank and a cuisine with a Tyrolean accent.", t1_go:"Discover the house",
+      t2_h3:"At the table", t2_p:"Regional dishes alongside flavours from Austria, Italy, Spain and Asia.", t2_go:"See the menu",
+      t3_h3:"Come and see us", t3_p:"Opposite the Tabuaço Municipal Pools. Book your table.", t3_go:"Book a table",
       /* navegação + rodapé */
       nav_home:"Home", nav_about:"About", nav_menu:"Menu", nav_contact:"Contact",
       footer_tag:"Douro cuisine with a Tyrolean accent. On the river's left bank, in Tabuaço, since 2003.",
@@ -23,6 +31,14 @@
       c_ph_msg:"Special occasion, dietary restrictions…", c_submit:"Send request"
     },
     de: {
+      /* início */
+      btn_menu:"Zur Speisekarte", btn_book:"Tisch reservieren",
+      mark1_s:"Unter den drei Besten des Festivals", mark2_s:"Exzellenz-Zertifikat", mark3_t:"Seit 2003",
+      home_eyebrow:"Das Haus",
+      home_h2:"Gutes Essen, guter Wein <span class='accent'>und eine schöne Aussicht.</span>",
+      t1_h3:"Der Douro bei Tisch", t1_p:"Tabuaço, das linke Flussufer und eine Küche mit Tiroler Akzent.", t1_go:"Das Haus entdecken",
+      t2_h3:"Bei Tisch", t2_p:"Regionale Gerichte neben Aromen aus Österreich, Italien, Spanien und Asien.", t2_go:"Zur Speisekarte",
+      t3_h3:"Besuchen Sie uns", t3_p:"Gegenüber dem städtischen Schwimmbad von Tabuaço. Reservieren Sie Ihren Tisch.", t3_go:"Tisch reservieren",
       nav_home:"Start", nav_about:"Über uns", nav_menu:"Speisekarte", nav_contact:"Kontakt",
       footer_tag:"Douro-Küche mit Tiroler Akzent. Am linken Flussufer, in Tabuaço, seit 2003.",
       foot_nav:"Navigation", foot_visit:"Besuchen Sie uns",
@@ -38,6 +54,14 @@
       c_ph_msg:"Besonderer Anlass, Ernährungshinweise…", c_submit:"Anfrage senden"
     },
     es: {
+      /* início */
+      btn_menu:"Ver el menú", btn_book:"Reservar mesa",
+      mark1_s:"Tres mejores del festival", mark2_s:"Certificado de Excelencia", mark3_t:"Desde 2003",
+      home_eyebrow:"La casa",
+      home_h2:"Buena comida, buenos vinos <span class='accent'>y buen paisaje.</span>",
+      t1_h3:"El Duero en la mesa", t1_p:"Tabuaço, la margen izquierda del río y una cocina con acento tirolés.", t1_go:"Conocer la casa",
+      t2_h3:"A la mesa", t2_p:"Platos de la región junto a sabores de Austria, Italia, España y Asia.", t2_go:"Ver el menú",
+      t3_h3:"Venga a vernos", t3_p:"Frente a las Piscinas Municipales de Tabuaço. Reserve su mesa.", t3_go:"Reservar mesa",
       nav_home:"Inicio", nav_about:"Nosotros", nav_menu:"Menú", nav_contact:"Contacto",
       footer_tag:"Cocina del Duero con acento tirolés. En la margen izquierda del río, en Tabuaço, desde 2003.",
       foot_nav:"Navegar", foot_visit:"Visítenos",
@@ -53,6 +77,14 @@
       c_ph_msg:"Ocasión especial, restricciones alimentarias…", c_submit:"Enviar solicitud"
     },
     fr: {
+      /* início */
+      btn_menu:"Voir la carte", btn_book:"Réserver une table",
+      mark1_s:"Trois meilleurs du festival", mark2_s:"Certificat d'Excellence", mark3_t:"Depuis 2003",
+      home_eyebrow:"La maison",
+      home_h2:"Bonne cuisine, bons vins <span class='accent'>et un beau paysage.</span>",
+      t1_h3:"Le Douro à table", t1_p:"Tabuaço, la rive gauche du fleuve et une cuisine à l'accent tyrolien.", t1_go:"Découvrir la maison",
+      t2_h3:"À table", t2_p:"Des plats de la région et des saveurs d'Autriche, d'Italie, d'Espagne et d'Asie.", t2_go:"Voir la carte",
+      t3_h3:"Venez nous voir", t3_p:"En face des Piscines Municipales de Tabuaço. Réservez votre table.", t3_go:"Réserver une table",
       nav_home:"Accueil", nav_about:"À propos", nav_menu:"Carte", nav_contact:"Contact",
       footer_tag:"Cuisine du Douro à l'accent tyrolien. Sur la rive gauche du fleuve, à Tabuaço, depuis 2003.",
       foot_nav:"Navigation", foot_visit:"Visitez-nous",

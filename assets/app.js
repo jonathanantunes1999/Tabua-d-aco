@@ -25,6 +25,7 @@
     var svg=b.querySelector('svg');
     if(svg&&langFlag) langFlag.innerHTML=svg.outerHTML;
     if(translate!==false && window.I18N) window.I18N.apply(code);
+    document.dispatchEvent(new CustomEvent('langchange',{detail:code}));
   }
   langBtn.addEventListener('click',function(e){
     e.stopPropagation();
@@ -55,11 +56,35 @@
   var hero=document.getElementById('hero');
   var title=document.getElementById('heroTitle');
   var sub=document.getElementById('heroSub');
-  var copy=[
-    {t:'Bem-vindo à <span class="accent">Tábua d\'Aço</span>', s:'Cozinha do Douro com sotaque do Tirol, em Tabuaço.'},
-    {t:'Boa comida, <span class="accent">bons vinhos</span>', s:'Os vinhos da região demarcada do Douro, a mais antiga do mundo.'},
-    {t:'E uma paisagem <span class="accent">à altura</span>', s:'Na margem esquerda do rio, mesmo em frente às Piscinas Municipais.'}
-  ];
+  var heroCopy={
+    pt:[
+      {t:'Bem-vindo à <span class="accent">Tábua d\'Aço</span>', s:'Cozinha do Douro com sotaque do Tirol, em Tabuaço.'},
+      {t:'Boa comida, <span class="accent">bons vinhos</span>', s:'Os vinhos da região demarcada do Douro, a mais antiga do mundo.'},
+      {t:'E uma paisagem <span class="accent">à altura</span>', s:'Na margem esquerda do rio, mesmo em frente às Piscinas Municipais.'}
+    ],
+    en:[
+      {t:'Welcome to <span class="accent">Tábua d\'Aço</span>', s:'Douro cuisine with a Tyrolean accent, in Tabuaço.'},
+      {t:'Great food, <span class="accent">great wines</span>', s:'Wines from the Douro demarcated region, the oldest in the world.'},
+      {t:'And a view <span class="accent">to match</span>', s:'On the left bank of the river, right opposite the Municipal Pools.'}
+    ],
+    de:[
+      {t:'Willkommen im <span class="accent">Tábua d\'Aço</span>', s:'Douro-Küche mit Tiroler Akzent, in Tabuaço.'},
+      {t:'Gutes Essen, <span class="accent">gute Weine</span>', s:'Weine aus dem Douro-Anbaugebiet, dem ältesten der Welt.'},
+      {t:'Und eine Landschaft <span class="accent">dazu</span>', s:'Am linken Flussufer, direkt gegenüber dem Schwimmbad.'}
+    ],
+    es:[
+      {t:'Bienvenido a <span class="accent">Tábua d\'Aço</span>', s:'Cocina del Duero con acento tirolés, en Tabuaço.'},
+      {t:'Buena comida, <span class="accent">buenos vinos</span>', s:'Vinos de la región demarcada del Duero, la más antigua del mundo.'},
+      {t:'Y un paisaje <span class="accent">a la altura</span>', s:'En la margen izquierda del río, frente a las Piscinas Municipales.'}
+    ],
+    fr:[
+      {t:'Bienvenue au <span class="accent">Tábua d\'Aço</span>', s:'Cuisine du Douro à l\'accent tyrolien, à Tabuaço.'},
+      {t:'Bonne cuisine, <span class="accent">bons vins</span>', s:'Les vins de la région délimitée du Douro, la plus ancienne au monde.'},
+      {t:'Et un paysage <span class="accent">à la hauteur</span>', s:'Sur la rive gauche du fleuve, face aux Piscines Municipales.'}
+    ]
+  };
+  var curLang=document.documentElement.getAttribute('lang')||'pt';
+  function copyFor(){return heroCopy[curLang]||heroCopy.pt;}
   var i=0, timer=null;
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -67,9 +92,10 @@
     i=(n+slides.length)%slides.length;
     slides.forEach(function(s,k){s.classList.toggle('active',k===i);});
     dots.forEach(function(d,k){d.classList.toggle('active',k===i);});
-    title.innerHTML=copy[i].t;
-    sub.textContent=copy[i].s;
+    title.innerHTML=copyFor()[i].t;
+    sub.textContent=copyFor()[i].s;
   }
+  document.addEventListener('langchange',function(e){curLang=(e&&e.detail)||document.documentElement.getAttribute('lang')||'pt';go(i);});
   function start(){if(!reduce){stop();timer=setInterval(function(){go(i+1);},6500);}}
   function stop(){if(timer){clearInterval(timer);timer=null;}}
 
