@@ -36,21 +36,18 @@
     <div class="header__right">
       <div class="lang" id="lang">
         <button class="lang__btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
-          <span class="lang__flag">
+          <span class="lang__flag" id="langFlag">
             <svg viewBox="0 0 30 20" width="24" height="17"><rect width="12" height="20" fill="#046A38"/><rect x="12" width="18" height="20" fill="#DA291C"/><circle cx="12" cy="10" r="5" fill="#FFE900" stroke="#fff" stroke-width=".7"/><circle cx="12" cy="10" r="3" fill="#DA291C"/></svg>
           </span>
-          <span id="langLabel">Pt</span>
+          <span id="langLabel">PT</span>
           <svg width="24" height="24" class="lang__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="lang__menu" role="menu">
-          <button role="menuitem" aria-current="true" data-lang="Pt">
-            <svg viewBox="0 0 30 20" width="22" height="15"><rect width="12" height="20" fill="#046A38"/><rect x="12" width="18" height="20" fill="#DA291C"/><circle cx="12" cy="10" r="5" fill="#FFE900" stroke="#fff" stroke-width=".7"/><circle cx="12" cy="10" r="3" fill="#DA291C"/></svg>
-            Português
-          </button>
-          <button role="menuitem" aria-current="false" data-lang="En">
-            <svg viewBox="0 0 30 20" width="22" height="15"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3.5"/></svg>
-            English
-          </button>
+          <button role="menuitem" aria-current="true" data-lang="pt"><svg viewBox="0 0 30 20" width="22" height="15"><rect width="12" height="20" fill="#046A38"/><rect x="12" width="18" height="20" fill="#DA291C"/><circle cx="12" cy="10" r="5" fill="#FFE900" stroke="#fff" stroke-width=".7"/><circle cx="12" cy="10" r="3" fill="#DA291C"/></svg> Português</button>
+          <button role="menuitem" aria-current="false" data-lang="en"><svg viewBox="0 0 30 20" width="22" height="15"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3.5"/></svg> English</button>
+          <button role="menuitem" aria-current="false" data-lang="de"><svg viewBox="0 0 30 20" width="22" height="15"><rect width="30" height="20" fill="#000"/><rect y="6.667" width="30" height="6.667" fill="#DD0000"/><rect y="13.333" width="30" height="6.667" fill="#FFCE00"/></svg> Deutsch</button>
+          <button role="menuitem" aria-current="false" data-lang="es"><svg viewBox="0 0 30 20" width="22" height="15"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg> Español</button>
+          <button role="menuitem" aria-current="false" data-lang="fr"><svg viewBox="0 0 30 20" width="22" height="15"><rect width="10" height="20" fill="#0055A4"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#EF4135"/></svg> Français</button>
         </div>
       </div>
     </div>
@@ -61,10 +58,10 @@
   </div>
 
   <nav class="header__nav" id="nav" aria-label="Navegação principal">
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre Nós</a>
-    <a href="ementa.html">Ementa</a>
-    <a href="contactos.html" class="active">Contactos</a>
+    <a href="index.html" data-i18n="nav_home">Início</a>
+    <a href="sobre.html" data-i18n="nav_about">Sobre Nós</a>
+    <a href="ementa.html" data-i18n="nav_menu">Ementa</a>
+    <a href="contactos.html" class="active" data-i18n="nav_contact">Contactos</a>
   </nav>
 </div>
 
@@ -73,14 +70,14 @@
   <div class="pagehero__bg"></div>
   <div class="pagehero__scrim"></div>
   <div class="pagehero__inner">
-    <span class="pagehero__k">Contactos</span>
-    <h1>Venha ter <span class='accent'>connosco.</span></h1>
-    <p>Em frente às Piscinas Municipais de Tabuaço, na margem esquerda do Douro.</p>
+    <span class="pagehero__k" data-i18n="c_k">Contactos</span>
+    <h1 data-i18n="c_h1">Venha ter <span class='accent'>connosco.</span></h1>
+    <p data-i18n="c_sub">Em frente às Piscinas Municipais de Tabuaço, na margem esquerda do Douro.</p>
   </div>
 </section>
 
 <nav class="crumbs" aria-label="Migalhas">
-  <a href="index.html">Início</a><span>/</span>Contactos
+  <a href="index.html" data-i18n="nav_home">Início</a><span>/</span><span data-i18n="nav_contact">Contactos</span>
 </nav>
 <!-- ============ CONTACTOS ============ -->
 <section class="section section--top contact" id="contactos">
@@ -89,25 +86,25 @@
       <div class="contact__info reveal">
         <div class="row">
           <span class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-          <div><span class="contact__k">Morada</span><span class="contact__v"><b>R. Môa, Edifício Piscinas Municipais</b><br>5120-372 Tabuaço</span></div>
+          <div><span class="contact__k" data-i18n="c_addr">Morada</span><span class="contact__v"><b>R. Môa, Edifício Piscinas Municipais</b><br>5120-372 Tabuaço</span></div>
         </div>
         <div class="row">
           <span class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.5-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></span>
-          <div><span class="contact__k">Telefone</span><span class="contact__v"><b><a href="tel:+351254781711">+351 254 781 711</a></b></span></div>
+          <div><span class="contact__k" data-i18n="c_phone">Telefone</span><span class="contact__v"><b><a href="tel:+351254781711">+351 254 781 711</a></b></span></div>
         </div>
         <div class="row">
           <span class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-          <div><span class="contact__k">Email</span><span class="contact__v"><b><a href="mailto:geral@restaurantetabuadaco.com">geral@restaurantetabuadaco.com</a></b></span></div>
+          <div><span class="contact__k" data-i18n="c_email">Email</span><span class="contact__v"><b><a href="mailto:geral@restaurantetabuadaco.com">geral@restaurantetabuadaco.com</a></b></span></div>
         </div>
         <div class="row">
           <span class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
           <div style="flex:1">
-            <span class="contact__k">Horário</span>
+            <span class="contact__k" data-i18n="c_hours">Horário</span>
             <div class="contact__v" style="margin-top:4px">
-              <div class="hours-line"><span>Terça a Sexta</span><span>12h–15h · 19h–23h</span></div>
-              <div class="hours-line"><span>Sábado</span><span>12h–24h</span></div>
-              <div class="hours-line"><span>Domingo</span><span>12h–16h</span></div>
-              <div class="hours-line closed"><span>Segunda</span><span>Encerrado</span></div>
+              <div class="hours-line"><span data-i18n="c_d1">Terça a Sexta</span><span>12h–15h · 19h–23h</span></div>
+              <div class="hours-line"><span data-i18n="c_d2">Sábado</span><span>12h–24h</span></div>
+              <div class="hours-line"><span data-i18n="c_d3">Domingo</span><span>12h–16h</span></div>
+              <div class="hours-line closed"><span data-i18n="c_d4">Segunda</span><span data-i18n="c_closed">Encerrado</span></div>
             </div>
           </div>
         </div>
@@ -116,40 +113,40 @@
       <form class="resform reveal" name="reservas" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="reservas">
         <p hidden><label>Não preencher: <input name="bot-field"></label></p>
-        <h3>Pedido de reserva</h3>
-        <p>Deixe os seus dados e confirmamos a mesa por telefone ou email.</p>
+        <h3 data-i18n="c_form_h">Pedido de reserva</h3>
+        <p data-i18n="c_form_sub">Deixe os seus dados e confirmamos a mesa por telefone ou email.</p>
         <div class="field">
-          <label for="nome">Nome</label>
-          <input id="nome" name="nome" type="text" placeholder="O seu nome" required>
+          <label for="nome" data-i18n="c_l_name">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="O seu nome" data-i18n-ph="c_ph_name" required>
         </div>
         <div class="field-row">
           <div class="field">
-            <label for="tel">Contacto</label>
-            <input id="tel" name="contacto" type="tel" placeholder="Telefone" required>
+            <label for="tel" data-i18n="c_l_contact">Contacto</label>
+            <input id="tel" name="contacto" type="tel" placeholder="Telefone" data-i18n-ph="c_ph_phone" required>
           </div>
           <div class="field">
-            <label for="pessoas">Pessoas</label>
+            <label for="pessoas" data-i18n="c_l_people">Pessoas</label>
             <select id="pessoas" name="pessoas">
               <option>1</option><option>2</option><option>3</option><option>4</option>
-              <option>5</option><option>6</option><option>7 ou mais</option>
+              <option>5</option><option>6</option><option data-i18n="c_opt_more">7 ou mais</option>
             </select>
           </div>
         </div>
         <div class="field-row">
           <div class="field">
-            <label for="data">Dia</label>
+            <label for="data" data-i18n="c_l_day">Dia</label>
             <input id="data" name="data" type="date">
           </div>
           <div class="field">
-            <label for="hora">Hora</label>
+            <label for="hora" data-i18n="c_l_time">Hora</label>
             <input id="hora" name="hora" type="time">
           </div>
         </div>
         <div class="field">
-          <label for="msg">Mensagem</label>
-          <textarea id="msg" name="mensagem" rows="2" placeholder="Ocasião especial, restrições alimentares…"></textarea>
+          <label for="msg" data-i18n="c_l_msg">Mensagem</label>
+          <textarea id="msg" name="mensagem" rows="2" placeholder="Ocasião especial, restrições alimentares…" data-i18n-ph="c_ph_msg"></textarea>
         </div>
-        <button type="submit" class="btn btn--gold">Enviar pedido
+        <button type="submit" class="btn btn--gold"><span data-i18n="c_submit">Enviar pedido</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
         </button>
       </form>
@@ -164,17 +161,17 @@
   <div class="footer__grid">
     <div>
       <img src="assets/logo-tabua-daco-claro.png" alt="Tábua d'Aço" class="footer__logo" width="320" height="203">
-      <p class="footer__tag">Cozinha do Douro com sotaque do Tirol. Na margem esquerda do rio, em Tabuaço, desde 2003.</p>
+      <p class="footer__tag" data-i18n="footer_tag">Cozinha do Douro com sotaque do Tirol. Na margem esquerda do rio, em Tabuaço, desde 2003.</p>
     </div>
     <div class="footer__col">
-      <h4>Navegar</h4>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre Nós</a>
-      <a href="ementa.html">Ementa</a>
-      <a href="contactos.html">Contactos</a>
+      <h4 data-i18n="foot_nav">Navegar</h4>
+      <a href="index.html" data-i18n="nav_home">Início</a>
+      <a href="sobre.html" data-i18n="nav_about">Sobre Nós</a>
+      <a href="ementa.html" data-i18n="nav_menu">Ementa</a>
+      <a href="contactos.html" data-i18n="nav_contact">Contactos</a>
     </div>
     <div class="footer__col">
-      <h4>Visite-nos</h4>
+      <h4 data-i18n="foot_visit">Visite-nos</h4>
       <p>R. Môa, Edifício Piscinas Municipais<br>5120-372 Tabuaço</p>
       <p><a href="tel:+351254781711">+351 254 781 711</a></p>
       <div class="footer__social">
@@ -184,7 +181,7 @@
     </div>
   </div>
   <div class="footer__bottom">
-    <span>© 2026 Tábua d'Aço — Todos os direitos reservados</span>
+    <span data-i18n="foot_rights">© 2026 Tábua d'Aço — Todos os direitos reservados</span>
     <span>Design &amp; desenvolvimento — Jonathan Antunes</span>
   </div>
 </div>
@@ -193,6 +190,7 @@
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
+<script src="assets/i18n.js?v=2"></script>
 <script src="assets/app.js?v=2"></script>
 </body>
 </html>
