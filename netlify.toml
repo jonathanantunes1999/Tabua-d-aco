@@ -1,4 +1,21 @@
+# Imagens e logótipos podem ser cacheados por muito tempo
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/*.jpg"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/assets/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# CSS e JS revalidam sempre, para as atualizações aparecerem logo
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
