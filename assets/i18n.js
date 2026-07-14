@@ -80,6 +80,8 @@
       dsh_hamburguer:"Burger with fries and egg",
       dsh_sumos:"Juices 1.5 L", dsh_agua15:"Water 1.5 L", dsh_fino:"Draught beer", dsh_agua:"Water", dsh_cerveja_mini:"Mini beer",
       dsh_vt750:"Red wine 750 ml", dsh_vb750:"White wine 750 ml", dsh_vt375:"Red wine 375 ml", dsh_vb375:"White wine 375 ml",
+      /* reviews */
+      rev_eyebrow:"Reviews", rev_h2:"What guests say", rev_summary:"· Certificate of Excellence on TripAdvisor", rev_src:"Review · TripAdvisor", rev_cta:"Read more on TripAdvisor",
       nav_home:"Home", nav_about:"About", nav_menu:"Menu", nav_contact:"Contact",
       footer_tag:"Douro cuisine with a Tyrolean accent. On the river's left bank, in Tabuaço, since 2003.",
       foot_nav:"Navigate", foot_visit:"Visit us",
@@ -169,6 +171,8 @@
       dsh_hamburguer:"Burger mit Pommes und Ei",
       dsh_sumos:"Säfte 1,5 L", dsh_agua15:"Wasser 1,5 L", dsh_fino:"Bier vom Fass", dsh_agua:"Wasser", dsh_cerveja_mini:"Kleines Bier",
       dsh_vt750:"Rotwein 750 ml", dsh_vb750:"Weißwein 750 ml", dsh_vt375:"Rotwein 375 ml", dsh_vb375:"Weißwein 375 ml",
+      /* reviews */
+      rev_eyebrow:"Bewertungen", rev_h2:"Was Gäste sagen", rev_summary:"· Exzellenz-Zertifikat auf TripAdvisor", rev_src:"Bewertung · TripAdvisor", rev_cta:"Mehr auf TripAdvisor",
       nav_home:"Start", nav_about:"Über uns", nav_menu:"Speisekarte", nav_contact:"Kontakt",
       footer_tag:"Douro-Küche mit Tiroler Akzent. Am linken Flussufer, in Tabuaço, seit 2003.",
       foot_nav:"Navigation", foot_visit:"Besuchen Sie uns",
@@ -257,6 +261,8 @@
       dsh_hamburguer:"Hamburguesa con patatas fritas y huevo",
       dsh_sumos:"Zumos 1,5 L", dsh_agua15:"Agua 1,5 L", dsh_fino:"Caña", dsh_agua:"Agua", dsh_cerveja_mini:"Cerveza mini",
       dsh_vt750:"Vino tinto 750 ml", dsh_vb750:"Vino blanco 750 ml", dsh_vt375:"Vino tinto 375 ml", dsh_vb375:"Vino blanco 375 ml",
+      /* reviews */
+      rev_eyebrow:"Opiniones", rev_h2:"Lo que dicen de nosotros", rev_summary:"· Certificado de Excelencia en TripAdvisor", rev_src:"Opinión · TripAdvisor", rev_cta:"Leer más en TripAdvisor",
       nav_home:"Inicio", nav_about:"Nosotros", nav_menu:"Menú", nav_contact:"Contacto",
       footer_tag:"Cocina del Duero con acento tirolés. En la margen izquierda del río, en Tabuaço, desde 2003.",
       foot_nav:"Navegar", foot_visit:"Visítenos",
@@ -345,6 +351,8 @@
       dsh_hamburguer:"Burger avec frites et œuf",
       dsh_sumos:"Jus 1,5 L", dsh_agua15:"Eau 1,5 L", dsh_fino:"Bière pression", dsh_agua:"Eau", dsh_cerveja_mini:"Petite bière",
       dsh_vt750:"Vin rouge 750 ml", dsh_vb750:"Vin blanc 750 ml", dsh_vt375:"Vin rouge 375 ml", dsh_vb375:"Vin blanc 375 ml",
+      /* reviews */
+      rev_eyebrow:"Avis", rev_h2:"Ce que disent nos clients", rev_summary:"· Certificat d'Excellence sur TripAdvisor", rev_src:"Avis · TripAdvisor", rev_cta:"Lire plus sur TripAdvisor",
       nav_home:"Accueil", nav_about:"À propos", nav_menu:"Carte", nav_contact:"Contact",
       footer_tag:"Cuisine du Douro à l'accent tyrolien. Sur la rive gauche du fleuve, à Tabuaço, depuis 2003.",
       foot_nav:"Navigation", foot_visit:"Visitez-nous",
