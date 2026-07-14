@@ -22,6 +22,8 @@
   --img1:url("hero-1-vale.jpg");
   --img2:url("hero-2-rio.jpg");
   --img3:url("hero-3-socalcos.jpg");
+  --hero2:url("hero-2-douro.jpg");
+  --hero3:url("hero-3-tabuaco.jpg");
 
   --wrap:1180px;
   --pad:clamp(20px,5vw,64px);
@@ -116,8 +118,8 @@ a{color:inherit;text-decoration:none}
 }
 .hero__slide.active{opacity:1;transform:scale(1)}
 .hero__slide[data-slide="0"]{background-image:var(--img1)}
-.hero__slide[data-slide="1"]{background-image:var(--img2)}
-.hero__slide[data-slide="2"]{background-image:var(--img3)}
+.hero__slide[data-slide="1"]{background-image:var(--hero2)}
+.hero__slide[data-slide="2"]{background-image:var(--hero3)}
 .hero__scrim{
   position:absolute;inset:0;pointer-events:none;
   background:
