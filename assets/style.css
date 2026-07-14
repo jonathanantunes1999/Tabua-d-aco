@@ -23,7 +23,7 @@
   --img2:url("hero-2-rio.jpg");
   --img3:url("hero-3-socalcos.jpg");
   --hero2:url("hero-2-douro.jpg");
-  --hero3:url("hero-3-tabuaco.jpg");
+  --hero3:url("hero-3-tabuaco.jpg?v=2");
 
   --wrap:1180px;
   --pad:clamp(20px,5vw,64px);
