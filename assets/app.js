@@ -1,5 +1,13 @@
 (function(){
 
+  /* ---------- header sobreposto (página inicial) ---------- */
+  var overlayHeader=document.querySelector('.header--overlay');
+  if(overlayHeader){
+    var onHeaderScroll=function(){overlayHeader.classList.toggle('scrolled',window.scrollY>60);};
+    window.addEventListener('scroll',onHeaderScroll,{passive:true});
+    onHeaderScroll();
+  }
+
   /* ---------- menu mobile ---------- */
   var burger=document.getElementById('burger');
   var nav=document.getElementById('nav');
