@@ -133,14 +133,13 @@
     btn.addEventListener('click',function(){
       filters.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false');});
       btn.classList.add('active');btn.setAttribute('aria-selected','true');
-      var f=btn.dataset.filter, vis=0;
+      var f=btn.dataset.filter;
       cards.forEach(function(c){
         var show=(f==='all'||c.dataset.cat===f);
         c.hidden=!show;
-        if(show){c.classList.add('in');c.style.animationDelay=(vis*0.05)+'s';vis++;}
-        else{c.style.animationDelay='';}
+        if(show)c.classList.add('in');
       });
-      /* re-dispara a animação de descida a cada troca */
+      /* re-dispara a animação: a ementa desenrola-se a partir do traço */
       if(menuGrid){menuGrid.classList.remove('menu-switching');void menuGrid.offsetWidth;menuGrid.classList.add('menu-switching');}
     });
   });
