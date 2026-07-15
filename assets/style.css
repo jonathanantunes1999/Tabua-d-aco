@@ -602,3 +602,26 @@ a{color:inherit;text-decoration:none}
 .review__src{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--steel)}
 .reviews__cta{margin-top:40px}
 @media(max-width:900px){.reviews__grid{grid-template-columns:1fr}}
+
+/* CHEFE — destaque na página inicial */
+.cheffeat{position:relative;background:var(--espresso);color:var(--cream);padding:clamp(64px,9vw,120px) var(--pad);overflow:hidden}
+.cheffeat__glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 90% at 12% 0%,rgba(231,168,30,.22),transparent 70%)}
+.cheffeat__wrap{
+  position:relative;z-index:1;max-width:var(--wrap);margin:0 auto;
+  display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:clamp(32px,5vw,72px);align-items:center;
+}
+.cheffeat__photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -28px rgba(0,0,0,.6);border:1px solid rgba(246,241,231,.14)}
+.cheffeat__photo img{width:100%;height:100%;object-fit:cover;display:block}
+.cheffeat__photo figcaption{position:absolute;left:16px;right:16px;bottom:14px;color:#fff;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.cheffeat__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55))}
+.cheffeat__lead{font-family:var(--display);font-weight:300;font-size:clamp(1.2rem,2vw,1.6rem);line-height:1.42;color:var(--cream);margin:22px 0;max-width:54ch}
+.cheffeat__tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.cheffeat__tags span{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-soft);border:1px solid rgba(231,168,30,.4);border-radius:100px;padding:8px 15px}
+@media(max-width:900px){
+  .cheffeat__wrap{grid-template-columns:1fr}
+  .cheffeat__photo{max-width:320px;margin-inline:auto;width:100%}
+}
+
+/* secção da região (pilares + paisagem) no Sobre Nós */
+.region{background:var(--cream-2)}
+.region .pillars{margin-top:0}

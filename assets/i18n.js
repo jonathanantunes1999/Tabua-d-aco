@@ -82,6 +82,10 @@
       dsh_vt750:"Red wine 750 ml", dsh_vb750:"White wine 750 ml", dsh_vt375:"Red wine 375 ml", dsh_vb375:"White wine 375 ml",
       /* reviews */
       rev_eyebrow:"Reviews", rev_h2:"What guests say", rev_summary:"· Certificate of Excellence on TripAdvisor", rev_src:"Review · TripAdvisor", rev_cta:"Read more on TripAdvisor",
+      /* chefe (destaque home) */
+      chefh_lead:"From Tyrol to the Douro. The Austrian chef who makes Tábua d'Aço a table where the region meets Austria, Italy, Spain and Asia.",
+      chefh_t1:"From Tyrol, Austria", chefh_t2:"Leading the kitchen since 2003", chefh_t3:"Tyrolean Week every year",
+      chefh_cta:"Meet the chef",
       nav_home:"Home", nav_about:"About", nav_menu:"Menu", nav_contact:"Contact",
       footer_tag:"Douro cuisine with a Tyrolean accent. On the river's left bank, in Tabuaço, since 2003.",
       foot_nav:"Navigate", foot_visit:"Visit us",
@@ -173,6 +177,10 @@
       dsh_vt750:"Rotwein 750 ml", dsh_vb750:"Weißwein 750 ml", dsh_vt375:"Rotwein 375 ml", dsh_vb375:"Weißwein 375 ml",
       /* reviews */
       rev_eyebrow:"Bewertungen", rev_h2:"Was Gäste sagen", rev_summary:"· Exzellenz-Zertifikat auf TripAdvisor", rev_src:"Bewertung · TripAdvisor", rev_cta:"Mehr auf TripAdvisor",
+      /* chefe (destaque home) */
+      chefh_lead:"Von Tirol an den Douro. Der österreichische Küchenchef, der die Tábua d'Aço zu einem Tisch macht, an dem sich die Region mit Österreich, Italien, Spanien und Asien trifft.",
+      chefh_t1:"Aus Tirol, Österreich", chefh_t2:"Leitet die Küche seit 2003", chefh_t3:"Tiroler Woche jedes Jahr",
+      chefh_cta:"Den Küchenchef kennenlernen",
       nav_home:"Start", nav_about:"Über uns", nav_menu:"Speisekarte", nav_contact:"Kontakt",
       footer_tag:"Douro-Küche mit Tiroler Akzent. Am linken Flussufer, in Tabuaço, seit 2003.",
       foot_nav:"Navigation", foot_visit:"Besuchen Sie uns",
@@ -263,6 +271,10 @@
       dsh_vt750:"Vino tinto 750 ml", dsh_vb750:"Vino blanco 750 ml", dsh_vt375:"Vino tinto 375 ml", dsh_vb375:"Vino blanco 375 ml",
       /* reviews */
       rev_eyebrow:"Opiniones", rev_h2:"Lo que dicen de nosotros", rev_summary:"· Certificado de Excelencia en TripAdvisor", rev_src:"Opinión · TripAdvisor", rev_cta:"Leer más en TripAdvisor",
+      /* chefe (destaque home) */
+      chefh_lead:"Del Tirol al Duero. El chef austríaco que hace de la Tábua d'Aço una mesa donde la región se cruza con Austria, Italia, España y Asia.",
+      chefh_t1:"Del Tirol, Austria", chefh_t2:"Al frente de la cocina desde 2003", chefh_t3:"Semana Tirolesa cada año",
+      chefh_cta:"Conocer al chef",
       nav_home:"Inicio", nav_about:"Nosotros", nav_menu:"Menú", nav_contact:"Contacto",
       footer_tag:"Cocina del Duero con acento tirolés. En la margen izquierda del río, en Tabuaço, desde 2003.",
       foot_nav:"Navegar", foot_visit:"Visítenos",
@@ -353,6 +365,10 @@
       dsh_vt750:"Vin rouge 750 ml", dsh_vb750:"Vin blanc 750 ml", dsh_vt375:"Vin rouge 375 ml", dsh_vb375:"Vin blanc 375 ml",
       /* reviews */
       rev_eyebrow:"Avis", rev_h2:"Ce que disent nos clients", rev_summary:"· Certificat d'Excellence sur TripAdvisor", rev_src:"Avis · TripAdvisor", rev_cta:"Lire plus sur TripAdvisor",
+      /* chefe (destaque home) */
+      chefh_lead:"Du Tyrol au Douro. Le chef autrichien qui fait de la Tábua d'Aço une table où la région rencontre l'Autriche, l'Italie, l'Espagne et l'Asie.",
+      chefh_t1:"Du Tyrol, Autriche", chefh_t2:"Aux commandes de la cuisine depuis 2003", chefh_t3:"Semaine Tyrolienne chaque année",
+      chefh_cta:"Rencontrer le chef",
       nav_home:"Accueil", nav_about:"À propos", nav_menu:"Carte", nav_contact:"Contact",
       footer_tag:"Cuisine du Douro à l'accent tyrolien. Sur la rive gauche du fleuve, à Tabuaço, depuis 2003.",
       foot_nav:"Navigation", foot_visit:"Visitez-nous",
