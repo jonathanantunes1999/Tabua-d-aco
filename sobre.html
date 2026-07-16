@@ -37,7 +37,7 @@
 <link rel="icon" type="image/png" href="assets/favicon.png?v=3">
 <link rel="icon" href="assets/favicon.ico?v=3" sizes="any">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/style.css?v=11">
+<link rel="stylesheet" href="assets/style.css?v=12">
 </head>
 <body>
 <!-- ============ HEADER ============ -->
@@ -186,23 +186,67 @@
   <div class="awards__wrap">
     <div class="eyebrow" style="justify-content:center"><span data-i18n="aw_eyebrow">Distinções</span> <span class="rule"></span></div>
     <h2 class="h2" data-i18n="aw_h2">Reconhecimento</h2>
-    <div class="awards__grid">
-      <article class="award reveal">
-        <span class="award__ico">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-2.5L17 22l-1.5-7.5"/></svg>
-        </span>
-        <span class="award__k">HT Douro</span>
-        <h3 data-i18n="mark1_s">Três melhores do festival</h3>
-        <p data-i18n="aw1_p">Distinguidos entre os três melhores participantes do festival.</p>
-      </article>
-      <article class="award reveal">
-        <span class="award__ico">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6.1L12 16.9 6.7 19.7l1.1-6.1L3.4 9.4l6-.8z"/></svg>
-        </span>
-        <span class="award__k">TripAdvisor</span>
-        <h3 data-i18n="mark2_s">Certificado de Excelência</h3>
-        <p data-i18n="aw2_p">Atribuído com base nas avaliações de quem já se sentou à mesa.</p>
-      </article>
+    <p class="awards__intro" data-i18n="aw_intro">Uma casa e um chefe reconhecidos dentro e fora de portas.</p>
+
+    <div class="awards__cols">
+      <!-- O Restaurante -->
+      <div class="awardcol reveal">
+        <h3 class="awardcol__t" data-i18n="aw_rest_t">O Restaurante</h3>
+        <ul class="seals">
+          <li class="seal">
+            <span class="seal__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-2.5L17 22l-1.5-7.5"/></svg></span>
+            <span class="seal__body">
+              <span class="seal__name">Boa Cama Boa Mesa</span>
+              <span class="seal__meta">2016 · 2018 · 2019 · Guia Expresso</span>
+            </span>
+          </li>
+          <li class="seal">
+            <span class="seal__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-2.5L17 22l-1.5-7.5"/></svg></span>
+            <span class="seal__body">
+              <span class="seal__name" data-i18n="awr2_t">Os Três Melhores do Festival</span>
+              <span class="seal__meta">HT Douro</span>
+            </span>
+          </li>
+          <li class="seal">
+            <span class="seal__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6.1L12 16.9 6.7 19.7l1.1-6.1L3.4 9.4l6-.8z"/></svg></span>
+            <span class="seal__body">
+              <span class="seal__name" data-i18n="awr3_t">Certificado de Excelência</span>
+              <span class="seal__meta">TripAdvisor</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- O Chefe -->
+      <div class="awardcol reveal">
+        <h3 class="awardcol__t" data-i18n="aw_chef_t">O Chefe Thomas Egger</h3>
+        <ol class="tline">
+          <li class="tline__item tline__item--star">
+            <span class="tline__yr">2015</span>
+            <h4 class="tline__ttl" data-i18n="awc1_t">Primeiro Green Chef de Portugal</h4>
+            <p class="tline__d" data-i18n="awc1_d">Reconhecimento pelo compromisso com a sustentabilidade, a utilização de produtos locais e o combate ao desperdício alimentar. Provavelmente a distinção mais marcante da sua carreira.</p>
+          </li>
+          <li class="tline__item">
+            <span class="tline__yr">2014</span>
+            <h4 class="tline__ttl" data-i18n="awc2_t">1.º Prémio «Value for Money» — Festival de Gastronomia e Vinhos do Douro</h4>
+            <p class="tline__d" data-i18n="awc2_d">Pela excelência da relação entre a qualidade gastronómica e a experiência proporcionada.</p>
+          </li>
+          <li class="tline__item">
+            <span class="tline__yr">2010</span>
+            <h4 class="tline__ttl" data-i18n="awc3_t">Voto de Louvor da Assembleia Municipal de Tabuaço</h4>
+            <p class="tline__d" data-i18n="awc3_d">Pelo contributo na promoção da gastronomia, do turismo e do concelho de Tabuaço, em Portugal e no estrangeiro.</p>
+          </li>
+          <li class="tline__item">
+            <span class="tline__yr">1995</span>
+            <h4 class="tline__ttl" data-i18n="awc4_t">Medalha de Prata — Concurso Nacional de Hotelaria da Áustria</h4>
+            <p class="tline__d" data-i18n="awc4_d">Uma das principais distinções obtidas durante a formação profissional na Áustria.</p>
+          </li>
+          <li class="tline__item">
+            <span class="tline__yr">1994</span>
+            <h4 class="tline__ttl" data-i18n="awc5_t">1.º Lugar — Concurso de Hotelaria do Tirol (Áustria)</h4>
+            <p class="tline__d" data-i18n="awc5_d">Vencedor do concurso organizado pela Câmara de Comércio do Tirol.</p>
+          </li>
+        </ol>
+      </div>
     </div>
   </div>
 </section>
@@ -244,7 +288,7 @@
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<script src="assets/i18n.js?v=2"></script>
+<script src="assets/i18n.js?v=5"></script>
 <script src="assets/app.js?v=4"></script>
 </body>
 </html>
