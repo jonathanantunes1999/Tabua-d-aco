@@ -646,38 +646,26 @@ a{color:inherit;text-decoration:none}
 .region{background:var(--cream-2)}
 .region .pillars{margin-top:0}
 
-/* ============ MARCAS D'ÁGUA — identidade do logótipo ============ */
-/* conteúdo sempre acima das marcas */
-.section__wrap{position:relative;z-index:1}
-.teasers,.reviews,.region,.menu,.contact{position:relative;overflow:hidden}
-.teasers::before,.teasers::after,
-.reviews::before,
-.region::before,.region::after,
-.menu::before,
-.contact::before{
+/* ============ MARCAS D'ÁGUA — Sobre Nós (elementos do logótipo) ============ */
+.brandzone{position:relative;overflow:hidden}
+.brandzone .section__wrap,
+.brandzone .awards__wrap{position:relative;z-index:1}
+.brandzone::before,.brandzone::after{
   content:"";position:absolute;z-index:0;pointer-events:none;user-select:none;
-  background-repeat:no-repeat;background-size:contain;background-position:center;
+  background-repeat:no-repeat;background-size:contain;opacity:.4;
 }
-/* Página inicial — atalhos */
-.teasers::before{width:min(46vw,560px);aspect-ratio:1.06/1;top:-9%;right:-9%;
-  background-image:url("motif-plate.png");opacity:.07;transform:rotate(8deg)}
-.teasers::after{width:min(28vw,320px);aspect-ratio:1.02/1;bottom:-9%;left:-6%;
-  background-image:url("motif-bowl-green.png");opacity:.09}
-/* Página inicial — reviews */
-.reviews::before{width:min(32vw,400px);aspect-ratio:1.31/1;top:-4%;left:-8%;
-  background-image:url("motif-bowl-brown.png");opacity:.07;transform:rotate(-8deg)}
-/* Sobre Nós — região (tigelas à esquerda, prato à direita, como no mockup) */
-.region::before{width:min(30vw,360px);aspect-ratio:1.02/1;top:16%;left:-8%;
-  background-image:url("motif-bowl-green.png");opacity:.09}
-.region::after{width:min(44vw,540px);aspect-ratio:1.06/1;bottom:-7%;right:-10%;
-  background-image:url("motif-plate.png");opacity:.07;transform:rotate(-6deg)}
-/* Ementa */
-.menu::before{width:min(42vw,520px);aspect-ratio:1.06/1;top:-6%;right:-10%;
-  background-image:url("motif-plate.png");opacity:.06;transform:rotate(10deg)}
-/* Contactos */
-.contact::before{width:min(40vw,480px);aspect-ratio:1.17/1;bottom:-11%;left:-9%;
-  background-image:url("motif-cluster.png");opacity:.06}
+/* tigelas — bordo esquerdo */
+.brandzone::before{
+  width:min(34vw,430px);aspect-ratio:460/326;left:-9%;top:11%;
+  background-image:url("motif-bowls.png");background-position:left center;
+  transform:scaleX(-1);
+}
+/* prato — bordo direito */
+.brandzone::after{
+  width:min(46vw,560px);aspect-ratio:1.06/1;right:-10%;top:30%;
+  background-image:url("motif-plate.png");background-position:right center;
+  transform:rotate(-6deg);
+}
 @media(max-width:900px){
-  .teasers::before,.teasers::after,.reviews::before,
-  .region::before,.region::after,.menu::before,.contact::before{display:none}
+  .brandzone::before,.brandzone::after{display:none}
 }
