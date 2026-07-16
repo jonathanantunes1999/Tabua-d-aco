@@ -650,40 +650,48 @@ a{color:inherit;text-decoration:none}
 .brandzone{position:relative;overflow:hidden}
 .brandzone .section__wrap,
 .brandzone .awards__wrap{position:relative;z-index:1}
-.brandzone::before,.brandzone::after{
-  content:"";position:absolute;z-index:0;pointer-events:none;user-select:none;
-  background-repeat:no-repeat;background-size:contain;opacity:.4;
-}
-/* tigelas — bordo esquerdo */
-.brandzone::before{
-  width:min(34vw,430px);aspect-ratio:460/326;left:-9%;top:11%;
-  background-image:url("motif-bowls.png");background-position:left center;
-  transform:scaleX(-1);
-}
-/* prato — bordo direito */
-.brandzone::after{
-  width:min(46vw,560px);aspect-ratio:1.06/1;right:-10%;top:30%;
-  background-image:url("motif-plate.png");background-position:right center;
-  transform:rotate(-6deg);
-}
-/* espalhar as marcas por mais secções do Sobre Nós (mesma opacidade) */
 .about{position:relative;overflow:hidden}
 .about .section__wrap{position:relative;z-index:1}
+
+/* base comum das marcas */
+.brandzone::before,.brandzone::after,
 .about::before,.about::after,
 .chef::before,.chef::after{
   content:"";position:absolute;z-index:0;pointer-events:none;user-select:none;
   background-repeat:no-repeat;background-size:contain;opacity:.4;
+  transition:transform 1.05s cubic-bezier(.16,.86,.28,1);will-change:transform;
 }
+
+/* --- posições + estado inicial FORA do ecrã (efeito "pull") --- */
+/* brandzone: tigelas esquerda, prato direita */
+.brandzone::before{width:min(34vw,430px);aspect-ratio:460/326;left:-9%;top:11%;
+  background-image:url("motif-bowls-flip.png");background-position:left center;
+  transform:translateX(-155%)}
+.brandzone.in-view::before{transform:translateX(0)}
+.brandzone::after{width:min(46vw,560px);aspect-ratio:1.06/1;right:-10%;top:30%;
+  background-image:url("motif-plate.png");background-position:right center;
+  transform:translateX(155%) rotate(-6deg)}
+.brandzone.in-view::after{transform:translateX(0) rotate(-6deg)}
+
 /* intro */
 .about::before{width:min(30vw,360px);aspect-ratio:1.06/1;right:-9%;top:-8%;
-  background-image:url("motif-plate.png");background-position:right center;transform:rotate(9deg)}
+  background-image:url("motif-plate.png");background-position:right center;
+  transform:translateX(165%) rotate(9deg)}
+.about.in-view::before{transform:translateX(0) rotate(9deg)}
 .about::after{width:min(24vw,300px);aspect-ratio:460/326;left:-8%;bottom:-9%;
-  background-image:url("motif-bowls.png");background-position:left center}
+  background-image:url("motif-bowls-flip.png");background-position:left center;
+  transform:translateX(-165%)}
+.about.in-view::after{transform:translateX(0)}
+
 /* chefe (fundo escuro) */
 .chef::before{width:min(26vw,320px);aspect-ratio:1.06/1;left:-8%;top:8%;
-  background-image:url("motif-plate.png");background-position:left center;transform:rotate(-11deg)}
+  background-image:url("motif-plate.png");background-position:left center;
+  transform:translateX(-170%) rotate(-11deg)}
+.chef.in-view::before{transform:translateX(0) rotate(-11deg)}
 .chef::after{width:min(22vw,280px);aspect-ratio:460/326;right:-7%;bottom:-6%;
-  background-image:url("motif-bowls.png");background-position:right center;transform:scaleX(-1)}
+  background-image:url("motif-bowls.png");background-position:right center;
+  transform:translateX(175%)}
+.chef.in-view::after{transform:translateX(0)}
 
 @media(max-width:900px){
   .brandzone::before,.brandzone::after,
