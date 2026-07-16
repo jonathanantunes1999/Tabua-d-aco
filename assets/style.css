@@ -20,6 +20,7 @@
   --mono:'Space Mono',ui-monospace,monospace;
 
   --img1:url("hero-1-vale.jpg");
+  --img-contactos:url("contactos-frente.jpg?v=1");
   --img2:url("hero-2-rio.jpg");
   --img3:url("hero-3-socalcos.jpg");
   --hero1:url("hero-1-vinhas.jpg");
@@ -571,7 +572,7 @@ a{color:inherit;text-decoration:none}
 .teaser::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,16,12,.15),rgba(20,16,12,.82))}
 .teaser--sobre .teaser__bg{background-image:var(--img2)}
 .teaser--ementa .teaser__bg{background-image:var(--img3)}
-.teaser--contactos .teaser__bg{background-image:var(--img1)}
+.teaser--contactos .teaser__bg{background-image:var(--img-contactos);background-position:center 42%}
 .teaser__k{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:10px}
 .teaser h3{font-family:var(--display);font-weight:300;font-size:1.5rem;margin-bottom:8px}
 .teaser p{font-size:.92rem;color:rgba(255,255,255,.8);margin-bottom:16px;max-width:30ch}
