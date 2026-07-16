@@ -646,109 +646,47 @@ a{color:inherit;text-decoration:none}
 .region{background:var(--cream-2)}
 .region .pillars{margin-top:0}
 
-/* ============ MARCAS D'ÁGUA — Sobre Nós (elementos do logótipo) ============ */
+/* ============ MARCA D'ÁGUA — um elemento que passa de lado a lado ============ */
 .brandzone{position:relative;overflow:hidden}
-.brandzone .section__wrap,
-.brandzone .awards__wrap{position:relative;z-index:1}
-.about{position:relative;overflow:hidden}
-.about .section__wrap{position:relative;z-index:1}
-
-/* base comum das marcas */
-.brandzone::before,.brandzone::after,
-.about::before,.about::after,
-.chef::before,.chef::after{
-  content:"";position:absolute;z-index:0;pointer-events:none;user-select:none;
-  background-repeat:no-repeat;background-size:contain;opacity:.4;
-  transition:transform 1.05s cubic-bezier(.16,.86,.28,1);will-change:transform;
-}
-
-/* --- posições + estado inicial FORA do ecrã (efeito "pull") --- */
-/* brandzone: tigelas esquerda, prato direita */
-.brandzone::before{width:min(34vw,430px);aspect-ratio:460/326;left:-9%;top:11%;
-  background-image:url("motif-bowls-flip.png");background-position:left center;
-  transform:translateX(-155%)}
-.brandzone.in-view::before{transform:translateX(0)}
-.brandzone::after{width:min(46vw,560px);aspect-ratio:1.06/1;right:-10%;top:30%;
-  background-image:url("motif-plate.png");background-position:right center;
-  transform:translateX(155%) rotate(-6deg)}
-.brandzone.in-view::after{transform:translateX(0) rotate(-6deg)}
-
-/* intro */
-.about::before{width:min(30vw,360px);aspect-ratio:1.06/1;right:-9%;top:-8%;
-  background-image:url("motif-plate.png");background-position:right center;
-  transform:translateX(165%) rotate(9deg)}
-.about.in-view::before{transform:translateX(0) rotate(9deg)}
-.about::after{width:min(24vw,300px);aspect-ratio:460/326;left:-8%;bottom:-9%;
-  background-image:url("motif-bowls-flip.png");background-position:left center;
-  transform:translateX(-165%)}
-.about.in-view::after{transform:translateX(0)}
-
-/* chefe (fundo escuro) */
-.chef::before{width:min(26vw,320px);aspect-ratio:1.06/1;left:-8%;top:8%;
-  background-image:url("motif-plate.png");background-position:left center;
-  transform:translateX(-170%) rotate(-11deg)}
-.chef.in-view::before{transform:translateX(0) rotate(-11deg)}
-.chef::after{width:min(22vw,280px);aspect-ratio:460/326;right:-7%;bottom:-6%;
-  background-image:url("motif-bowls.png");background-position:right center;
-  transform:translateX(175%)}
-.chef.in-view::after{transform:translateX(0)}
-
-/* ---- restantes páginas (mesmo efeito pull, 40%) ---- */
-.teasers,.reviews,.cheffeat,.menu,.contact{position:relative;overflow:hidden}
-.teasers .section__wrap,.reviews .section__wrap,
+.brandzone .section__wrap,.brandzone .awards__wrap{position:relative;z-index:1}
+.about,.chef,.teasers,.reviews,.cheffeat,.menu,.contact{position:relative;overflow:hidden}
+.about .section__wrap,.teasers .section__wrap,.reviews .section__wrap,
 .menu .section__wrap,.contact .section__wrap{position:relative;z-index:1}
-.teasers::before,.teasers::after,
-.reviews::before,.reviews::after,
-.cheffeat::before,.cheffeat::after,
-.menu::before,.menu::after,
-.contact::before,.contact::after{
+
+/* uma marca por secção (::before) — as tigelas do logótipo */
+.about::before,.chef::before,.brandzone::before,
+.teasers::before,.reviews::before,.cheffeat::before,
+.menu::before,.contact::before{
   content:"";position:absolute;z-index:0;pointer-events:none;user-select:none;
   background-repeat:no-repeat;background-size:contain;opacity:.4;
-  transition:transform 1.05s cubic-bezier(.16,.86,.28,1);will-change:transform;
+  width:min(32vw,400px);aspect-ratio:460/326;
+  transition:transform 1.1s cubic-bezier(.16,.86,.28,1);will-change:transform;
 }
-/* Início — atalhos */
-.teasers::before{width:min(34vw,420px);aspect-ratio:1.06/1;right:-9%;top:-9%;
-  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(8deg)}
-.teasers.in-view::before{transform:translateX(0) rotate(8deg)}
-.teasers::after{width:min(26vw,320px);aspect-ratio:460/326;left:-8%;bottom:-10%;
-  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
-.teasers.in-view::after{transform:translateX(0)}
-/* Início — reviews */
-.reviews::before{width:min(28vw,340px);aspect-ratio:460/326;left:-8%;top:-6%;
-  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
-.reviews.in-view::before{transform:translateX(0)}
-.reviews::after{width:min(34vw,420px);aspect-ratio:1.06/1;right:-9%;bottom:-9%;
-  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(-7deg)}
-.reviews.in-view::after{transform:translateX(0) rotate(-7deg)}
-/* Início — chefe (escuro) */
-.cheffeat::before{width:min(26vw,320px);aspect-ratio:1.06/1;left:-8%;top:4%;
-  background-image:url("motif-plate.png");background-position:left center;transform:translateX(-170%) rotate(-10deg)}
-.cheffeat.in-view::before{transform:translateX(0) rotate(-10deg)}
-.cheffeat::after{width:min(22vw,280px);aspect-ratio:460/326;right:-7%;bottom:-8%;
-  background-image:url("motif-bowls.png");background-position:right center;transform:translateX(175%)}
-.cheffeat.in-view::after{transform:translateX(0)}
-/* Ementa */
-.menu::before{width:min(36vw,460px);aspect-ratio:1.06/1;right:-10%;top:-6%;
-  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(9deg)}
-.menu.in-view::before{transform:translateX(0) rotate(9deg)}
-.menu::after{width:min(26vw,320px);aspect-ratio:460/326;left:-8%;bottom:-8%;
-  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
-.menu.in-view::after{transform:translateX(0)}
-/* Contactos */
-.contact::before{width:min(28vw,340px);aspect-ratio:460/326;left:-8%;top:-6%;
-  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
-.contact.in-view::before{transform:translateX(0)}
-.contact::after{width:min(34vw,420px);aspect-ratio:1.06/1;right:-9%;bottom:-9%;
-  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(-8deg)}
-.contact.in-view::after{transform:translateX(0) rotate(-8deg)}
+/* secções com a marca à ESQUERDA (entra da esquerda) */
+.cheffeat::before,.reviews::before,.about::before,.brandzone::before,.contact::before{
+  left:-8%;background-image:url("motif-bowls-flip.png");background-position:left center;
+  transform:translateX(-170%);
+}
+.cheffeat.in-view::before,.reviews.in-view::before,.about.in-view::before,
+.brandzone.in-view::before,.contact.in-view::before{transform:translateX(0)}
+/* secções com a marca à DIREITA (entra da direita) */
+.teasers::before,.chef::before,.menu::before{
+  right:-8%;background-image:url("motif-bowls.png");background-position:right center;
+  transform:translateX(170%);
+}
+.teasers.in-view::before,.chef.in-view::before,.menu.in-view::before{transform:translateX(0)}
+/* alturas (centradas em cada secção, para dar o vaivém) */
+.cheffeat::before{top:12%}
+.about::before{top:16%}
+.teasers::before{top:14%}
+.chef::before{top:24%}
+.reviews::before{top:18%}
+.brandzone::before{top:24%}
+.menu::before{top:12%}
+.contact::before{top:16%}
 
 @media(max-width:900px){
-  .brandzone::before,.brandzone::after,
-  .about::before,.about::after,
-  .chef::before,.chef::after,
-  .teasers::before,.teasers::after,
-  .reviews::before,.reviews::after,
-  .cheffeat::before,.cheffeat::after,
-  .menu::before,.menu::after,
-  .contact::before,.contact::after{display:none}
+  .about::before,.chef::before,.brandzone::before,
+  .teasers::before,.reviews::before,.cheffeat::before,
+  .menu::before,.contact::before{display:none}
 }
