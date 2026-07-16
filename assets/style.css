@@ -41,17 +41,32 @@ a{color:inherit;text-decoration:none}
 /* ============ HEADER (2 camadas, à Lunar) ============ */
 .header{position:sticky;top:0;z-index:100;background:var(--white)}
 
-/* página inicial: header oculto sobre a imagem, aparece ao rolar */
+/* página inicial: cabeçalho sobre a imagem (sem fundo); ao rolar surge a barra branca */
 .header--overlay{
   position:fixed;top:0;left:0;right:0;background:transparent;
-  transform:translateY(-100%);
-  transition:transform .45s cubic-bezier(.2,.7,.2,1),background .3s ease,box-shadow .3s ease;
-  will-change:transform;
+  transition:background .35s ease,box-shadow .35s ease;
 }
 .header--overlay.scrolled{
-  transform:translateY(0);background:var(--white);
+  background:var(--white);
   box-shadow:0 8px 26px -16px rgba(0,0,0,.4);
 }
+/* leve escurecimento por trás do cabeçalho para o texto se ler sobre as fotos */
+.header--overlay:not(.scrolled)::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:230%;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(18,14,10,.5),rgba(18,14,10,0));
+}
+.header--overlay:not(.scrolled) .header__top{border-bottom-color:transparent}
+/* cabeçalho claro enquanto está sobre a imagem */
+.header--overlay:not(.scrolled) .header__nav a,
+.header--overlay:not(.scrolled) .lang__btn{color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.header--overlay:not(.scrolled) .header__nav a svg{color:#fff;opacity:.92}
+.header--overlay:not(.scrolled) .header__nav a.active svg{opacity:1}
+.header--overlay:not(.scrolled) .lang__chev{color:rgba(255,255,255,.85)}
+.header--overlay:not(.scrolled) .burger span{background:#fff}
+/* troca de logótipo consoante o fundo */
+.header__logo .logo-light{display:none}
+.header--overlay:not(.scrolled) .header__logo .logo-dark{display:none}
+.header--overlay:not(.scrolled) .header__logo .logo-light{display:block}
 
 .header__top{
   height:var(--head-top);
