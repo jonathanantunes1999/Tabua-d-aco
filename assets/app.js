@@ -159,5 +159,5 @@
   var wmIO=new IntersectionObserver(function(entries){
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');wmIO.unobserve(e.target);}});
   },{threshold:0,rootMargin:'0px 0px -12% 0px'});
-  document.querySelectorAll('.brandzone,.about,.chef').forEach(function(el){wmIO.observe(el);});
+  document.querySelectorAll('.brandzone,.about,.chef,.teasers,.reviews,.cheffeat,.menu,.contact').forEach(function(el){wmIO.observe(el);});
 })();

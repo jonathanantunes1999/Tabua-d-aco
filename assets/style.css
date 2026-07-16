@@ -693,8 +693,62 @@ a{color:inherit;text-decoration:none}
   transform:translateX(175%)}
 .chef.in-view::after{transform:translateX(0)}
 
+/* ---- restantes páginas (mesmo efeito pull, 40%) ---- */
+.teasers,.reviews,.cheffeat,.menu,.contact{position:relative;overflow:hidden}
+.teasers .section__wrap,.reviews .section__wrap,
+.menu .section__wrap,.contact .section__wrap{position:relative;z-index:1}
+.teasers::before,.teasers::after,
+.reviews::before,.reviews::after,
+.cheffeat::before,.cheffeat::after,
+.menu::before,.menu::after,
+.contact::before,.contact::after{
+  content:"";position:absolute;z-index:0;pointer-events:none;user-select:none;
+  background-repeat:no-repeat;background-size:contain;opacity:.4;
+  transition:transform 1.05s cubic-bezier(.16,.86,.28,1);will-change:transform;
+}
+/* Início — atalhos */
+.teasers::before{width:min(34vw,420px);aspect-ratio:1.06/1;right:-9%;top:-9%;
+  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(8deg)}
+.teasers.in-view::before{transform:translateX(0) rotate(8deg)}
+.teasers::after{width:min(26vw,320px);aspect-ratio:460/326;left:-8%;bottom:-10%;
+  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
+.teasers.in-view::after{transform:translateX(0)}
+/* Início — reviews */
+.reviews::before{width:min(28vw,340px);aspect-ratio:460/326;left:-8%;top:-6%;
+  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
+.reviews.in-view::before{transform:translateX(0)}
+.reviews::after{width:min(34vw,420px);aspect-ratio:1.06/1;right:-9%;bottom:-9%;
+  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(-7deg)}
+.reviews.in-view::after{transform:translateX(0) rotate(-7deg)}
+/* Início — chefe (escuro) */
+.cheffeat::before{width:min(26vw,320px);aspect-ratio:1.06/1;left:-8%;top:4%;
+  background-image:url("motif-plate.png");background-position:left center;transform:translateX(-170%) rotate(-10deg)}
+.cheffeat.in-view::before{transform:translateX(0) rotate(-10deg)}
+.cheffeat::after{width:min(22vw,280px);aspect-ratio:460/326;right:-7%;bottom:-8%;
+  background-image:url("motif-bowls.png");background-position:right center;transform:translateX(175%)}
+.cheffeat.in-view::after{transform:translateX(0)}
+/* Ementa */
+.menu::before{width:min(36vw,460px);aspect-ratio:1.06/1;right:-10%;top:-6%;
+  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(9deg)}
+.menu.in-view::before{transform:translateX(0) rotate(9deg)}
+.menu::after{width:min(26vw,320px);aspect-ratio:460/326;left:-8%;bottom:-8%;
+  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
+.menu.in-view::after{transform:translateX(0)}
+/* Contactos */
+.contact::before{width:min(28vw,340px);aspect-ratio:460/326;left:-8%;top:-6%;
+  background-image:url("motif-bowls-flip.png");background-position:left center;transform:translateX(-165%)}
+.contact.in-view::before{transform:translateX(0)}
+.contact::after{width:min(34vw,420px);aspect-ratio:1.06/1;right:-9%;bottom:-9%;
+  background-image:url("motif-plate.png");background-position:right center;transform:translateX(160%) rotate(-8deg)}
+.contact.in-view::after{transform:translateX(0) rotate(-8deg)}
+
 @media(max-width:900px){
   .brandzone::before,.brandzone::after,
   .about::before,.about::after,
-  .chef::before,.chef::after{display:none}
+  .chef::before,.chef::after,
+  .teasers::before,.teasers::after,
+  .reviews::before,.reviews::after,
+  .cheffeat::before,.cheffeat::after,
+  .menu::before,.menu::after,
+  .contact::before,.contact::after{display:none}
 }
