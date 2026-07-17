@@ -620,7 +620,14 @@ a{color:inherit;text-decoration:none}
 .tline__yr{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;color:var(--brown);font-weight:700}
 .tline__ttl{font-family:var(--display);font-weight:400;font-size:1.06rem;color:var(--brown-deep);margin:3px 0 5px}
 .tline__d{font-size:.9rem;color:var(--ink-soft);max-width:46ch}
-@media(max-width:900px){.awards__cols{grid-template-columns:1fr;gap:38px}}
+/* mural de logótipos "Reconhecido por" */
+.awardwall{max-width:1000px;margin:clamp(46px,6vw,70px) auto 0;border-top:1px solid var(--steel-line);padding-top:clamp(30px,4vw,40px);text-align:center}
+.awardwall__k{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin-bottom:24px}
+.awardwall__row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(28px,5vw,60px)}
+.awardwall__row img{height:clamp(30px,4vw,44px);width:auto;filter:grayscale(1);opacity:.5;transition:filter .35s ease,opacity .35s ease}
+.awardwall__row img:hover{filter:none;opacity:1}
+.awardwall__row img.aw--wide{height:clamp(21px,2.9vw,31px)}
+@media(max-width:900px){.awards__cols{grid-template-columns:1fr;gap:38px}.awardwall__row{gap:30px}}
 
 /* REVIEWS */
 .reviews{background:var(--cream)}
