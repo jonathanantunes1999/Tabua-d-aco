@@ -21,6 +21,7 @@
 
   --img1:url("hero-1-vale.jpg");
   --img-contactos:url("contactos-frente.jpg?v=1");
+  --img-mesa:url("interior-sala.jpg?v=1");
   --img2:url("hero-2-rio.jpg");
   --img3:url("hero-3-socalcos.jpg");
   --hero1:url("hero-1-vinhas.jpg");
@@ -539,7 +540,7 @@ a{color:inherit;text-decoration:none}
 }
 .pagehero__bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.03)}
 .pagehero--sobre .pagehero__bg{background-image:var(--img2)}
-.pagehero--ementa .pagehero__bg{background-image:var(--img3)}
+.pagehero--ementa .pagehero__bg{background-image:var(--img-mesa)}
 .pagehero--contactos .pagehero__bg{background-image:var(--img1)}
 .pagehero__scrim{
   position:absolute;inset:0;
