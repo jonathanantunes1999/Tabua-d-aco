@@ -66,7 +66,7 @@
   var sub=document.getElementById('heroSub');
   var heroCopy={
     pt:[
-      {t:'Bem-vindo à <span class="accent">Tábua d\'Aço</span>', s:'Cozinha do Douro com sotaque do Tirol, em Tabuaço.'},
+      {t:'Bem-vindo ao <span class="accent">Tábua d\'Aço</span>', s:'Cozinha do Douro com sotaque do Tirol, em Tabuaço.'},
       {t:'Boa comida, <span class="accent">bons vinhos</span>', s:'Os vinhos da região demarcada do Douro, a mais antiga do mundo.'},
       {t:'E uma paisagem <span class="accent">à altura</span>', s:'Na margem esquerda do rio, mesmo em frente às Piscinas Municipais.'}
     ],
