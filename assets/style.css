@@ -627,6 +627,9 @@ a{color:inherit;text-decoration:none}
 .awardwall__row img{height:clamp(30px,4vw,44px);width:auto;filter:grayscale(1);opacity:.5;transition:filter .35s ease,opacity .35s ease}
 .awardwall__row img:hover{filter:none;opacity:1}
 .awardwall__row img.aw--wide{height:clamp(21px,2.9vw,31px)}
+/* faixa "Reconhecido por" usada nas restantes páginas (antes do rodapé) */
+.trustband{background:var(--cream);padding:clamp(46px,6vw,72px) var(--pad);border-top:1px solid var(--steel-line)}
+.trustband .awardwall{border-top:0;padding-top:0;margin-top:0}
 @media(max-width:900px){.awards__cols{grid-template-columns:1fr;gap:38px}.awardwall__row{gap:30px}}
 
 /* REVIEWS */
