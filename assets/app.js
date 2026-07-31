@@ -155,9 +155,21 @@
   },{threshold:.14,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
-  /* ---------- marcas d'água: entram/saem sempre que a secção entra na vista (efeito "pull") ---------- */
+  /* ---------- marcas d'água: entram/saem sempre que a MARCA (não a secção toda) entra na vista ----------
+     as secções podem ser muito mais altas que o ecrã, por isso observamos um sensor invisível
+     posicionado à mesma altura da marca (o mesmo "top" usado no CSS), em vez da secção inteira —
+     assim a animação acompanha sempre a posição real da marca, a descer e a subir. */
+  var wmTop={brandzone:24,about:16,chef:24,teasers:14,reviews:18,cheffeat:12,menu:12,contact:16};
   var wmIO=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){e.target.classList.toggle('in-view',e.isIntersecting);});
-  },{threshold:0,rootMargin:'0px 0px -12% 0px'});
-  document.querySelectorAll('.brandzone,.about,.chef,.teasers,.reviews,.cheffeat,.menu,.contact').forEach(function(el){wmIO.observe(el);});
+    entries.forEach(function(e){e.target.parentElement.classList.toggle('in-view',e.isIntersecting);});
+  },{threshold:0,rootMargin:'-35% 0px -35% 0px'});
+  Object.keys(wmTop).forEach(function(cls){
+    document.querySelectorAll('.'+cls).forEach(function(sec){
+      var sensor=document.createElement('span');
+      sensor.setAttribute('aria-hidden','true');
+      sensor.style.cssText='position:absolute;left:0;width:1px;height:1px;pointer-events:none;top:'+wmTop[cls]+'%;';
+      sec.appendChild(sensor);
+      wmIO.observe(sensor);
+    });
+  });
 })();
