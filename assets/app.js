@@ -149,15 +149,15 @@
   window.addEventListener('scroll',function(){totop.classList.toggle('show',window.scrollY>600);},{passive:true});
   totop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
 
-  /* ---------- reveal ---------- */
+  /* ---------- reveal (repete sempre que entra/sai da vista, ambos os sentidos) ---------- */
   var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    entries.forEach(function(e){e.target.classList.toggle('in',e.isIntersecting);});
   },{threshold:.14,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
-  /* ---------- marcas d'água: entram de fora ao rolar (efeito "pull") ---------- */
+  /* ---------- marcas d'água: entram/saem sempre que a secção entra na vista (efeito "pull") ---------- */
   var wmIO=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');wmIO.unobserve(e.target);}});
+    entries.forEach(function(e){e.target.classList.toggle('in-view',e.isIntersecting);});
   },{threshold:0,rootMargin:'0px 0px -12% 0px'});
   document.querySelectorAll('.brandzone,.about,.chef,.teasers,.reviews,.cheffeat,.menu,.contact').forEach(function(el){wmIO.observe(el);});
 })();
