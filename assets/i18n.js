@@ -112,7 +112,8 @@
       c_form_sub:"Leave your details and we'll confirm your table by phone or email.",
       c_l_name:"Name", c_l_contact:"Contact", c_l_people:"Guests", c_l_day:"Day", c_l_time:"Time", c_l_msg:"Message",
       c_ph_name:"Your name", c_ph_phone:"Phone", c_opt_more:"7 or more",
-      c_ph_msg:"Special occasion, dietary restrictions…", c_submit:"Send request"
+      c_ph_msg:"Special occasion, dietary restrictions…", c_submit:"Send request",
+      c_map_k:"How to find us", c_map_link:"Open in Google Maps"
     },
     de: {
       /* início */
@@ -219,7 +220,8 @@
       c_form_sub:"Hinterlassen Sie Ihre Daten und wir bestätigen den Tisch per Telefon oder E-Mail.",
       c_l_name:"Name", c_l_contact:"Kontakt", c_l_people:"Personen", c_l_day:"Tag", c_l_time:"Uhrzeit", c_l_msg:"Nachricht",
       c_ph_name:"Ihr Name", c_ph_phone:"Telefon", c_opt_more:"7 oder mehr",
-      c_ph_msg:"Besonderer Anlass, Ernährungshinweise…", c_submit:"Anfrage senden"
+      c_ph_msg:"Besonderer Anlass, Ernährungshinweise…", c_submit:"Anfrage senden",
+      c_map_k:"So finden Sie uns", c_map_link:"In Google Maps öffnen"
     },
     es: {
       /* início */
@@ -326,7 +328,8 @@
       c_form_sub:"Déjenos sus datos y le confirmamos la mesa por teléfono o correo.",
       c_l_name:"Nombre", c_l_contact:"Contacto", c_l_people:"Personas", c_l_day:"Día", c_l_time:"Hora", c_l_msg:"Mensaje",
       c_ph_name:"Su nombre", c_ph_phone:"Teléfono", c_opt_more:"7 o más",
-      c_ph_msg:"Ocasión especial, restricciones alimentarias…", c_submit:"Enviar solicitud"
+      c_ph_msg:"Ocasión especial, restricciones alimentarias…", c_submit:"Enviar solicitud",
+      c_map_k:"Cómo llegar", c_map_link:"Abrir en Google Maps"
     },
     fr: {
       /* início */
@@ -433,7 +436,8 @@
       c_form_sub:"Laissez vos coordonnées et nous confirmons la table par téléphone ou e-mail.",
       c_l_name:"Nom", c_l_contact:"Contact", c_l_people:"Personnes", c_l_day:"Jour", c_l_time:"Heure", c_l_msg:"Message",
       c_ph_name:"Votre nom", c_ph_phone:"Téléphone", c_opt_more:"7 ou plus",
-      c_ph_msg:"Occasion spéciale, restrictions alimentaires…", c_submit:"Envoyer la demande"
+      c_ph_msg:"Occasion spéciale, restrictions alimentaires…", c_submit:"Envoyer la demande",
+      c_map_k:"Comment nous trouver", c_map_link:"Ouvrir dans Google Maps"
     }
   };
 
