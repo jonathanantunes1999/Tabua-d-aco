@@ -19,14 +19,14 @@
   --sans:'Figtree',-apple-system,'Segoe UI',sans-serif;
   --mono:'Space Mono',ui-monospace,monospace;
 
-  --img1:url("hero-1-vale.jpg");
-  --img-contactos:url("contactos-frente.jpg?v=1");
-  --img-mesa:url("interior-sala.jpg?v=1");
-  --img2:url("hero-2-rio.jpg");
-  --img3:url("hero-3-socalcos.jpg");
-  --hero1:url("hero-1-vinhas.jpg");
-  --hero2:url("hero-2-douro.jpg?v=3");
-  --hero3:url("hero-3-tabuaco.jpg?v=2");
+  --img1:url("hero-1-vale.webp");
+  --img-contactos:url("contactos-frente.webp?v=1");
+  --img-mesa:url("interior-sala.webp?v=1");
+  --img2:url("hero-2-rio.webp");
+  --img3:url("hero-3-socalcos.webp");
+  --hero1:url("hero-1-vinhas.webp");
+  --hero2:url("hero-2-douro.webp?v=3");
+  --hero3:url("hero-3-tabuaco.webp?v=2");
 
   --wrap:1180px;
   --pad:clamp(20px,5vw,64px);
@@ -256,7 +256,7 @@ a{color:inherit;text-decoration:none}
 .about__meta .stat span{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
 
 .about__photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(90,54,41,.45)}
-.about__img{width:100%;height:100%;background-image:url("sobre-vista-tabuaco.jpg");background-size:cover;background-position:74% center}
+.about__img{width:100%;height:100%;background-image:url("sobre-vista-tabuaco.webp");background-size:cover;background-position:74% center}
 .about__photo figcaption{
   position:absolute;left:22px;bottom:18px;color:#fff;font-family:var(--mono);
   font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 2px 12px rgba(0,0,0,.6);
